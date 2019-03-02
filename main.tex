@@ -1,0 +1,46 @@
+\documentclass [12pt ,a4paper ,twoside ,openright ]{book}
+\setlength{\topmargin}{0in}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[paper=a4paper,margin=1in]{geometry}
+\usepackage{cite}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{titlesec}
+
+%PACCHETTI PER LA MATEMATICA
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\fboxsep=10mm%padding thickness
+\fboxrule=4pt%border thickness
+
+\begin{document}
+
+\title{L'algoritmo di back propagation error nelle reti neurali e la loro evoluzione in reti neurali profonde}
+\author{Alessandro Sassi}
+\date{Today}
+
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+
+
+\input{frontespizio}
+\chapter*{Introduzione}
+\vspace{-2cm}
+\input{intro}
+\chapter*{L'algoritmo di Backpropagation }
+\input{bp}
+
+\bibliographystyle{plain}
+\bibliography{bib_ale}
+
+\end{document}

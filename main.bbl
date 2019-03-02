@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{stanford_history}
+{}.
+\newblock {History of neural networks}.
+\newblock
+  \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/index.html},
+  2010.
+\newblock Online; accessed 28 Febraury 2019.
+
+\bibitem{saito1997partial}
+Kazumi Saito and Ryohei Nakano.
+\newblock Partial bfgs update and efficient step-length calculation for
+  three-layer neural networks.
+\newblock {\em Neural Computation}, 9(1):123--141, 1997.
+
+\bibitem{TSD}
+Subarna Tripathi, Gokce Dane, Byeongkeun Kang, Vasudev Bhaskaran, and Truong
+  Nguyen.
+\newblock Lcdet: Low-complexity fully-convolutional neural networks for object
+  detection in embedded systems.
+\newblock 05 2017.
+
+\bibitem{wiki:tipi}
+{Wikipedia contributors}.
+\newblock Types of artificial neural networks --- {Wikipedia}{,} the free
+  encyclopedia, 2019.
+\newblock [Online; accessed 1-March-2019].
+
+\end{thebibliography}
