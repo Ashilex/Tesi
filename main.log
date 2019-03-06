@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  3 MAR 2019 11:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  6 MAR 2019 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,7 +627,68 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip52
 \thm@headsep=\skip53
 \dth@everypar=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen133
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count118
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count119
+\leftroot@=\count120
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count121
+\DOTSCASE@=\count122
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen135
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count123
+\c@MaxMatrixCols=\count124
+\dotsspace@=\muskip11
+\c@parentequation=\count125
+\dspbrk@lvl=\count126
+\tag@help=\toks30
+\row@=\count127
+\column@=\count128
+\maxfields@=\count129
+\andhelp@=\toks31
+\eqnshift@=\dimen136
+\alignsep@=\dimen137
+\tagshift@=\dimen138
+\tagwidth@=\dimen139
+\totwidth@=\dimen140
+\lineht@=\dimen141
+\@envbody=\toks32
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 ) (./main.aux
+
+LaTeX Warning: Label `fig:subfig' multiply defined.
+
 
 LaTeX Warning: Label `fig:subfig' multiply defined.
 
@@ -637,35 +698,35 @@ LaTeX Warning: Label `fig:subfig' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Info: Redefining \it@ocap on input line 23.
-LaTeX Info: Redefining \it@ccap on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Info: Redefining \it@ocap on input line 24.
+LaTeX Info: Redefining \it@ccap on input line 24.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen133
-\scratchbox=\box30
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen134
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count130
+\scratchdimen=\dimen142
+\scratchbox=\box32
+\nofMPsegments=\count131
+\nofMParguments=\count132
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen143
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -683,8 +744,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 23.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -692,11 +753,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -826,7 +887,7 @@ Overfull \hbox (21.62912pt too wide) in paragraph at lines 64--65
 
 [6 <./media_tesi/perceptron.png> <./media_tesi/feed_forward.png> <./media_tesi/
 DFF.png> <./media_tesi/DCN.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 73--40
+Underfull \hbox (badness 10000) in paragraph at lines 73--41
 
  []
 
@@ -842,28 +903,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<media_tesi/valley_with_ball.png, id=76, 815.045pt x 614.295pt>
+File: media_tesi/valley_with_ball.png Graphic file (type png)
 
- [9]
-<media_tesi/learning_trajectories_of_second_order.jpeg, id=90, 554.07pt x 712.1
-6063pt>
+<use media_tesi/valley_with_ball.png>
+Package pdftex.def Info: media_tesi/valley_with_ball.png used on input line 10.
+
+(pdftex.def)             Requested size: 203.83417pt x 153.62961pt.
+ [9] [10 <./media_tesi/valley_with_ball.png>] [11]
+<media_tesi/learning_trajectories_of_second_order.jpeg, id=106, 554.07pt x 712.
+16063pt>
 File: media_tesi/learning_trajectories_of_second_order.jpeg Graphic file (type 
 jpg)
  <use media_tesi/learning_trajectories_of_second_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_second_order.jpeg 
-used on input line 19.
+used on input line 58.
 (pdftex.def)             Requested size: 203.83417pt x 261.9957pt.
 
-<media_tesi/learning_trajectories_of_first_order.jpeg, id=91, 545.03625pt x 509
-.65407pt>
+<media_tesi/learning_trajectories_of_first_order.jpeg, id=107, 545.03625pt x 50
+9.65407pt>
 File: media_tesi/learning_trajectories_of_first_order.jpeg Graphic file (type j
 pg)
  <use media_tesi/learning_trajectories_of_first_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_first_order.jpeg u
-sed on input line 21.
+sed on input line 60.
 (pdftex.def)             Requested size: 203.83417pt x 190.59875pt.
- [10 <./media_tesi/learning_trajectories_of_second_order.jpeg> <./media_tesi/le
-arning_trajectories_of_first_order.jpeg>]) (./main.bbl [11] [12
+) [12 <./media_tesi/learning_trajectories_of_second_order.jpeg> <./media_tesi/l
+earning_trajectories_of_first_order.jpeg>] (./main.bbl [13] [14
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
@@ -871,12 +937,12 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -889,13 +955,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 70 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9128 strings out of 494351
- 131871 string characters out of 6164197
- 334806 words of memory out of 5000000
- 12277 multiletter control sequences out of 15000+600000
+ 9699 strings out of 494351
+ 138481 string characters out of 6164197
+ 347215 words of memory out of 5000000
+ 12824 multiletter control sequences out of 15000+600000
  19951 words of font info for 48 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 44i,9n,49p,1752b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,9n,49p,2232b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknap
 pen/ec/ectt1200.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecti1000.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/
@@ -916,11 +982,12 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (13 pages, 689498 bytes).
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (15 pages, 784129 bytes).
 PDF statistics:
- 551 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

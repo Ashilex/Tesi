@@ -3,7 +3,44 @@ Il nostro algoritmo viene applicato in modo da riprogrammare ad ogni iterazione 
 \\
 Per far questo abbiamo bisogno di un metodo. Potremmo pensare di trattare questa minimizzazione con un approccio analitico ma considerando che le variabili in gioco nelle reti reali possono essere anche miliardi questo non è fattibile. 
 Facciamo allora ricorso ad un algoritmo, che in diversi passi successivi ci aiuta a trovare il punto di minimo che cerchiamo. Questo algoritmo è il \textit{metodo della discesa del gradiente}, spieghiamo in primis cosa è il gradiente e poi come funziona l'algoritmo.
-Data una funzione di due o più variabili, il suo gradiente in un punto $x=(x_{1}, x_{2},\, \cdots \, , x_{n})$del dominio è il vettore delle sue derivate parziali rispetto a tutte le variabili: $\nabla C \equiv (\frac{\partial C}{\partial x_{1}}, \frac{\partial C}{\partial x_{2}}, \cdots, \frac{\partial C}{\partial x_{n}})^{T}$. Questa è solo una formula matematica e non ci da bene idea di cosa stiamo parlando. Dobbiamo allora rifarci ad uno scenario reale per capire meglio cosa sia il gradiente; la realtà è fatta di tre dimensioni quindi rimaniamo in uno spazio tale per spiegarci meglio: se fossimo in una valle e avessimo una palla perfettamente tonda , il gradiente è il vettore della direzione in cui la palla si muoverebbe se, appoggiata a terra, venisse lasciata libera di rotolare lungo il pendio della valle. In una tale ipotesi le variabili libere non sono $n$ come abbiamo generalizzato, ma sono soltanto due $v_{1}, v_{2}$ (usiamo le $v$ e non le $x$ per separare la spiegazione dalla sua metafora). Possiamo vedere una figura che rappresenta quanto detto.
+Data una funzione di due o più variabili, il suo gradiente in un punto $x=(x_{1}, x_{2},\, \cdots \, , x_{n})$del dominio è il vettore delle sue derivate parziali rispetto a tutte le variabili: $\nabla C \equiv (\frac{\partial C}{\partial x_{1}}, \frac{\partial C}{\partial x_{2}}, \cdots, \frac{\partial C}{\partial x_{n}})^{T}$. Questa è solo una formula matematica e non ci da bene idea di cosa stiamo parlando. Dobbiamo allora rifarci ad uno scenario reale per capire meglio cosa sia il gradiente; la realtà è fatta di tre dimensioni quindi rimaniamo in uno spazio tale per spiegarci meglio: se fossimo in una valle e avessimo una palla perfettamente tonda , il gradiente è il vettore della direzione lungo la quale la funzione cresce maggiormente e , di contrario, $-\nabla C$ è la direzione in cui la palla si muoverebbe se, appoggiata a terra, venisse lasciata libera di rotolare lungo il pendio della valle. In una tale ipotesi le variabili libere non sono $n$ come abbiamo generalizzato, ma sono soltanto due $v_{1}, v_{2}$ (usiamo le $v$ e non le $x$ per separare la spiegazione dalla sua metafora). Possiamo vedere una figura che rappresenta quanto detto.
+
+\begin{figure}[hbtb]
+\centering
+{\includegraphics[width=.45\textwidth]{media_tesi/valley_with_ball.png}}
+\caption{Il grafico della funzione $C(v_{1}, v_{2})$ con la pallina verde che rappresenta il punto in analisi e il vettore gradiente spiccato da esso, ad indicare in quale direzione moverebbe nella discesa}
+\label{fig:subfig}
+\end{figure}
+
+Se ora abbiamo un'idea più chiara di cosa sia il vettore gradiente spieghiamo in cosa consiste il metodo della discesa che lo utilizza. Ipotizzando la stessa metafora della valle vogliamo sfruttare il fatto che la discesa della pallina si arresterà nella parte più bassa dalla depressione dipinta a scacchi della Baviera. Il nostro metodo computa una discesa simile ma diversa nel fatto che il percorso che farà la nostra pallina non approssimerà la discesa \textit{fisica} che avverrebbe nella realtà. Per cui il nostro metodo non si rifà alle equazioni della dinamica di Newton, è un pò diverso. Per ora sappiamo che, dato un punto sulla superficie di una valle, la direzione opposta a quella del gradiente è quella in cui la palla si muoverebbe se fosse libera di scendere; nel nostro metodo seguiamo un percorso di discesa fatto di tanti piccoli passi che prevedono , partendo da un punto, di muoversi verso $-\nabla C$ per un piccolo tratto. Mossi nel nuovo punto, che chiamiamo $P_{2}$, ricalcoleremmo il gradiente $\nabla C(P_{2})$ e faremmo altri piccoli passi in direzione $- \nabla C(P_{2})$. Si capisce che questo metodo va iterato a lungo per scendere lungo la valle fino ad arrivare nel suo punto più basso. Tra un iterazione $k$ e la successiva $k+1$, ci saremo spostati dal punto $P_{k}$ al punto $P_{k+1}$ per cui $ \Delta P= P_{k+1}-P_{k}=-\eta \nabla C$ dove $\eta$ è un piccolo parametro positivo detto il \textit{learning rate} che fornisce un indicazione di quanto grande sia la distanza percorsa fra un iterazione e l'altra nell'algoritmo; va da se che se il $\eta$ cresce l'algoritmo procede più speditamente , ma questo potrebbe portare anche a degli errori. Ritorniamo dal parallelo con la valle, la palla e le variabili $v$ alla nostra funzione dei costi $C(w, b)$ e vediamo come il metodo del gradiente funzioni con più di due variabili, anche se di questa situazione non potremo avere una visualizzazione. Cosi come ci spostiamo da un punto all'altro nella valle, aggiornando le due variabili della nostra posizione, ora aggiorniamo le variabili della funzione dei costi, ovvero $w$ i pesi e $b$ i bias. Le regola per aggiornare queste componenti sarà:
+\begin{equation}
+w_{k}\rightarrow w'_{k}=w_{k}-\eta \dfrac{\partial C}{\partial w_{k}}
+\end{equation}
+\begin{equation}
+b_{l}\rightarrow b'_{l}=b_{l}-\eta \dfrac{\partial C}{\partial b_{l}}
+\end{equation}
+dove $k$ è il (FARSI AIUTARE A CAPIRE BENE k ED L). Ripetendo questa regola arriveremo a trovare il minimo della funzione.
+(SPIEGARE IL MINIBATCH E IL FATTO CHE È STOCASTICO IL GRADIENTE)
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{media_tesi/valley_with_ball.png}
+%\caption{Il grafico della funzione $C(v_{1}, v_{2})$ con la pallina verde che rappresenta il punto in analisi e il vettore gradiente spiccato da esso, ad indicare in quale direzione moverebbe nella discesa}
+%\end{center}
+\\
+Ora che abbiamo spiegato come funziona il gradiente dobbiamo andare più a fondo a spiegare come si rapportano fra loro i neuroni collegati, come si attivano e come propagano il proprio segnale.
+Ogni neurone $j^{th}$ è collegato (stiamo sempre parlando del caso delle reti feed forward) ai neuroni dello strato precedente dall'arco di peso C (cioè dal neurone $k$ in $l-1$ al neurone $j$ in $l$)e la sua attivazione viene determinata da una computazione fatta sui segnali in ingresso, più precisamente è la somma delle attivazioni dei neuroni dello stato precedente a lui collegati, moltiplicati per il peso del loro arco verso $j^{th}$ più una quantità $b_{j}$ specifica del neurone, questà somma prende il nome di $z^{l}_{j}$. 
+
+\begin{equation}
+\displaystyle a^{l}_{j}=\sigma\left( z^{l}_{j}\right) = \sigma \left( \sum_{k}w^{l}_{kj}a^{l-1}_k +b^{l}_{j} \right)
+\end{equation}
+Esiste una quantità $ a^{l}_{j} $ per ogni neurone $j$ nello strato $l$, possiamo annotare come un vettore questi $a$ output per tutti gli $n$ neuroni di quello strato $a^{l} = \left[a^{l}_{1},a^{l}_{2}, \cdots, a^{l}_{j}, \cdots, a^{l}_{n}  \right] $. Vediamo ora come di strato in strato i neuroni si attivano fra loro e per questo adottiamo una notazione matriciale di quanto abbiamo appena visto: denotiamo allora una matrice $w^{l}$ dei pesi per ogni layer della rete, dove le sue entry sono $w^{l}_{kj}$ i vari pesi che legano i neuroni fra lo strato $l-1$ ed $l$ e denotiamo, allo stesso modo di $a^{l}$ anche il vettore dei \textit{bias} $b^{l}$ per il livello $l$ e riscriviamo la formula 3 come:
+\begin{equation}
+	a^{l}=\sigma\left( w^{l}a^{l-1}+b^{l}\right)
+\end{equation} . 
+\\
+La propagazione del calcolo degli output dei singoli livelli procede verso il livello finale, l' \textit{output layer}
+
+
+
 
 \section*{I miglioramenti}
 \subsection*{Migliorare backpropagation attraverso diversi approcci sulla discesa del gradiente}
