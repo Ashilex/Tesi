@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  6 MAR 2019 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  7 MAR 2019 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,11 +892,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--41
 [7] [8
 
 ] (./bp.tex [9]
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [10]
@@ -904,7 +904,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: media_tesi/valley_with_ball.png Graphic file (type png)
 
 <use media_tesi/valley_with_ball.png>
-Package pdftex.def Info: media_tesi/valley_with_ball.png used on input line 20.
+Package pdftex.def Info: media_tesi/valley_with_ball.png used on input line 24.
 
 (pdftex.def)             Requested size: 203.83417pt x 153.62961pt.
  [11 <./media_tesi/valley_with_ball.png>]
@@ -912,7 +912,7 @@ Package pdftex.def Info: media_tesi/valley_with_ball.png used on input line 20.
 File: media_tesi/sigmoide.png Graphic file (type png)
 
 <use media_tesi/sigmoide.png>
-Package pdftex.def Info: media_tesi/sigmoide.png used on input line 53.
+Package pdftex.def Info: media_tesi/sigmoide.png used on input line 57.
 (pdftex.def)             Requested size: 203.83417pt x 125.60762pt.
  [12] [13 <./media_tesi/sigmoide.png (PNG copy)>]
 <media_tesi/learning_trajectories_of_second_order.jpeg, id=121, 554.07pt x 712.
@@ -921,7 +921,7 @@ File: media_tesi/learning_trajectories_of_second_order.jpeg Graphic file (type
 jpg)
  <use media_tesi/learning_trajectories_of_second_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_second_order.jpeg 
-used on input line 95.
+used on input line 99.
 (pdftex.def)             Requested size: 203.83417pt x 261.9957pt.
 
 <media_tesi/learning_trajectories_of_first_order.jpeg, id=122, 545.03625pt x 50
@@ -930,7 +930,7 @@ File: media_tesi/learning_trajectories_of_first_order.jpeg Graphic file (type j
 pg)
  <use media_tesi/learning_trajectories_of_first_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_first_order.jpeg u
-sed on input line 97.
+sed on input line 101.
 (pdftex.def)             Requested size: 203.83417pt x 190.59875pt.
  [14])
 (./main.bbl [15 <./media_tesi/learning_trajectories_of_second_order.jpeg> <./me
@@ -962,11 +962,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  9713 strings out of 494351
  138719 string characters out of 6164197
- 352215 words of memory out of 5000000
+ 349215 words of memory out of 5000000
  12828 multiletter control sequences out of 15000+600000
  19951 words of font info for 48 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 44i,9n,49p,4398b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,9n,49p,2656b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknap
 pen/ec/ectt1200.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecti1000.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/
@@ -989,7 +989,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (17 pages, 811315 bytes).
+Output written on main.pdf (17 pages, 811320 bytes).
 PDF statistics:
  590 PDF objects out of 1000 (max. 8388607)
  186 compressed objects within 2 object streams
