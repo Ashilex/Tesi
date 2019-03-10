@@ -8,11 +8,23 @@
   2010.
 \newblock Online; accessed 28 Febraury 2019.
 
+\bibitem{brito2016gpu}
+Ricardo Brito, Simon Fong, Kyungeun Cho, Wei Song, Raymond Wong, Sabah
+  Mohammed, and Jinan Fiaidhi.
+\newblock Gpu-enabled back-propagation artificial neural network for digit
+  recognition in parallel.
+\newblock {\em The Journal of Supercomputing}, 72(10):3868--3886, 2016.
+
 \bibitem{saito1997partial}
 Kazumi Saito and Ryohei Nakano.
 \newblock Partial bfgs update and efficient step-length calculation for
   three-layer neural networks.
 \newblock {\em Neural Computation}, 9(1):123--141, 1997.
+
+\bibitem{quora:why_gpu}
+{Tim Dettmers}.
+\newblock Answer to why gpu are well suited for deep learning?, 2016.
+\newblock [Online; accessed 10-March-2019].
 
 \bibitem{TSD}
 Subarna Tripathi, Gokce Dane, Byeongkeun Kang, Vasudev Bhaskaran, and Truong

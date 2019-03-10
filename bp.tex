@@ -47,7 +47,7 @@ Ogni neurone $j^{th}$ è collegato (stiamo sempre parlando del caso delle reti f
 \displaystyle a^{l}_{j}=\sigma\left( z^{l}_{j}\right) = \sigma \left( \sum_{k}w^{l}_{kj}a^{l-1}_k +b^{l}_{j} \right)
 \end{equation}
 
-Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati precedenti e internamente deve decidere se propagare a sua volta lo stimolo o meno. In biologia abbiamo già anticipato che i neuroni, una volta eccitati, non hanno una via di mezzo nel rispondere al segnale per cui o propagano a loro volta lo stimolo nella rete "accendendosi"  oppure rimangono in quiete senza reagire. Nelle reti neurali la funzione di attivazione di solito non emette un segnale binario, piuttosto propaga vari livelli d'intensità del segnale. $\sigma$ rappresenta quella classe di funzioni sigmoidali (che hanno una caratteristica curva a \textit{S}) che ben si adattano a rappresentare l'attivazione dei neuroni. Quindi, se un neurone reale può veder rappresentata la propria funzione di attivazione come una funzione a gradino una sigmoide è la versione addolcita della funzione gradino, come mostriamo qui sotto con il plot della funzione sigmoide:
+Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati precedenti e internamente deve decidere se propagare a sua volta lo stimolo o meno. In biologia abbiamo già anticipato che i neuroni, una volta eccitati, non hanno una via di mezzo nel rispondere al segnale per cui o propagano a loro volta lo stimolo nella rete "accendendosi"  oppure rimangono in quiete senza reagire. Nelle reti neurali la funzione di attivazione di solito non emette un segnale binario, piuttosto propaga vari livelli d'intensità del segnale. $\sigma$ rappresenta quella classe di funzioni sigmoidali (che hanno una caratteristica curva a \textit{S}) che ben si adattano a rappresentare l'attivazione dei neuroni e che hanno lo scopo di normalizzare gli output nel range da $0$ a $1$. Quindi, se un neurone reale può veder rappresentata la propria funzione di attivazione come una funzione a gradino una sigmoide è la versione addolcita della funzione gradino, come mostriamo qui sotto con il plot della funzione sigmoide:
 \begin{equation}
 	\sigma(z)=\dfrac{1}{1+e^{-z}}
 \end{equation}
@@ -110,5 +110,44 @@ Per velocizzare BP è stato anche introdotto il momento , che ha lo scopo di rid
 
 Nel 1988 la ricerca aveva già riconosciuto la bontà della procedura BP e si investigavano quegli algoritmi di ricerca dell'ottimo per la funzione di minimo che computassero la discesa del gradiente soltanto localmente (ovvero rimanendo in intorni molto vicini al punto di iterazione). Questo cosidetto \textit{locality constraint} veniva motivato dal fatto che costituiva una buona metafora tecnologica della controparte biologica , le reti neurali, a cui si ispirava e in secondo luogo dall'ipotesi che questi algoritmi \textit{locali} fossero più adatti ad essere processati in parallelo.
 Fra le quattro euristiche di Jacobs vi era l'adattamento dei tassi d'apprendimento nel tempo e si spiega che ogni peso della rete dovrebbe avere il proprio tasso d'apprendimento specifico. Le implementazioni di queste euristiche venivano individuate nel \textit{momento} e nella regola d'apprendimento \textit{delta-bar-delta}.
-\subsection*{low complexity NNs}
+\subsection*{Low complexity NNs}
 Alcuni altri indirizzi di miglioramento dell'efficacia delle reti sfruttano il BP per modellare delle reti meno complesse (\textit{low complexity}) che possano essere utili a scopi meno sofisticati. Ad esempio, nelle reti convuluzionali, dove il processo di riconoscimento degli oggetti ha luogo, gli algoritmi vengono eseguiti su costese GPU che dissipano grandi quantità di energia e un tale scenario non è adatto a scopi dove il livello di dettaglio nel riconoscere gli oggetti non è così elevato. Applicazioni più popolari e frequenti come il riconoscimento facciale nei dispositivi mobili deve per forza di cose girare in locale sui processori embedded che animano gli smartphone, per questo i ricercatori sfruttano varianti del BP per creare reti convuluzionali a bassa complessità. Queste modellano problemi molto meno \textit{demanding} e possono quindi essere eseguite più velocemente anche sui dispositivi meno prestanti\cite{TSD}.
+\subsection*{Le performance tra CPU e GPU}
+Nella sezione riguardante la matematica di backpropagation abbiamo citato come i calcoli per le attivazioni dei neuroni non vengano eseguiti uno alla volta ma , livello per livello, ma vengano raggruppati in vettori e matrici non solo per snellire la notazione usata ma anche perché a tutti gli effetti è quello che accade realmente. La quantità di dati coinvolta in una rete neurale può essere davvero notevole, con lo strato di input che può avere fino a migliaia di nodi, per questo le matrici che vengono coinvolte nei calcoli possono diventare molto grandi ed occupare notevoli quantità di spazio in memoria.\\ 
+
+Tale utilizzo di memoria costituisce un limite difficile per la computazione da parte delle CPU, anche quelle multi-core. Le CPU ottimizzano la velocità di calcolo sui singoli processi seriali e sono un'alternativa ad un altro tipo di architettura per processori: le GPU. Le GPU furono inventate nel 1999 DA Nvidia per la grafica dei PC e nel 2007 gli sviluppatori poterono sfruttare le potenzialità di calcolo parallelo anche per applicazioni più generiche grazie alla piattaforma di programmazione \textit{CUDA}. Nel 2009 [INSERIRE NOTA DA QUI: https://www.quora.com/Who-introduced-GPU-to-deep-learning] un documento accademico di Stanford illustrava quanto più velocemente si potesse addestrare delle reti neurali utilizzando metodi con GPU , fino a 70 volte più veloci della controparte con CPU. Tale approccio consentì l'uso di dataset più ricchi e un aumento dei parametri a disposizione per settare la rete. Altri benefici collegati all'introduzione delle schede grafiche furono una democratizzazione della ricerca sull'AI. I costi derivati dall'attività di ricerca diminuirono, evitando l'utilizzo di cluster di CPU e molti più laboratori in giro per il mondo poterono contribuire all'avanzamento del settore. 
+
+Ma perchè le GPU? Tanta più memoria si necessita per sviluppare i calcoli di queste matrici tanto più l'utilizzo delle GPU migliora le prestazione poiché queste ottimizzano i calcoli del processo su una banda più ampia verso la memoria, date le numerose unità di calcolo. A voler a fare un paragone i calcoli richiesti sono numerosi come i pacchi postali da scambiare fra due località che vengono messe in collegamento da un capiente ma lento camion e da una rapida automobile che però ha una ridotta capacità, nel momento in cui i pacchi diventano molti allora tanto maggiori sono i vantaggi di trasportali in unico viaggio, per quanto lento, con il camion \cite{quora:why_gpu}.
+\\
+Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali nello svolgere il medesimo compito , una implementata su GPU l'altra su CPU. L'esperimento consiste nel riconoscere cifre numeriche scritte a mano, presentate in un dataset chiamato \textit{MNIST} , come quelle in figura. Presentiamo i risultati delle velocità di computazione nella tabella e nel grafico riportato sotto, dai quali possiamo evidenziare come aver allenato la rete neurale attraverso la GPU aumenti di un fattore molto grande le performance rispetto alla controparte in CPU e che la GPU sia da preferire quando nella rete sono presenti un grande numero di ATTRIBUTI (SPECIFICARE MEGLIO), altrimenti il costo dell'inizializzazione della scheda non verrebbe giustificato dall'incremento delle velocità \cite{brito2016gpu}.
+
+\begin{figure}[hbtb]
+\centering
+{\includegraphics[scale=0.65]{media_tesi/table_experiment.png}}
+\caption{Riassunto dei risultati dell'esperimento }
+\label{fig:subfig}
+\end{figure}
+
+\begin{figure}[hbtb]
+\centering
+{\includegraphics[scale=0.5]{media_tesi/graph_GPU_vs_CPU.png}}
+\caption{Il grafico che mostra le differenze tra le velocità di esecuzione tra CPU e GPU}
+\label{fig:subfig}
+\end{figure}
+
+\begin{figure}[hbtb]
+\centering
+{\includegraphics[scale=0.5]{media_tesi/MNIST.png}}
+\caption{Un esempio di cifre da riconoscere da parte della reti nell'esperimento}
+\label{fig:subfig}
+\end{figure}
+
+%\begin{figure}[hbtb]
+%\centering
+%\subfloat[][\emph{Traiettorie algoritmi del primo ordine}]
+%{\includegraphics[width=.45\textwidth]{media_tesi/}} \quad
+%\subfloat[][\emph{Traiettorie algoritmi del secondo ordine}]
+%{\includegraphics[width=.45\textwidth]{media_tesi/learning_trajectories_of_first_order.jpeg}} \\
+%\caption{Confronto tra tipologie diverse di algoritmi}
+%\label{fig:subfig}
+%\end{figure}

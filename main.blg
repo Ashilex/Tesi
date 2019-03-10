@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: bib_ale.bib
 Warning--empty journal in TSD
-You've used 4 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            522 strings with 4700 characters,
-and the built_in function-call counts, 1110 in all, are:
-= -- 104
-> -- 55
+            535 strings with 5085 characters,
+and the built_in function-call counts, 1822 in all, are:
+= -- 170
+> -- 100
 < -- 0
-+ -- 22
-- -- 18
-* -- 67
-:= -- 197
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 21
++ -- 40
+- -- 34
+* -- 122
+:= -- 318
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 35
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 35
-empty$ -- 89
-format.name$ -- 18
-if$ -- 224
+cite$ -- 7
+duplicate$ -- 53
+empty$ -- 140
+format.name$ -- 34
+if$ -- 366
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 2
-newline$ -- 24
-num.names$ -- 8
-pop$ -- 30
+int.to.str$ -- 6
+missing$ -- 3
+newline$ -- 34
+num.names$ -- 12
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 29
 quote$ -- 0
-skip$ -- 28
+skip$ -- 42
 stack$ -- 0
-substring$ -- 45
-swap$ -- 3
+substring$ -- 86
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 24
 warning$ -- 1
-while$ -- 10
-width$ -- 5
-write$ -- 44
+while$ -- 16
+width$ -- 7
+write$ -- 65
 (There was 1 warning)
