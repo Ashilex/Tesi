@@ -1,4 +1,4 @@
-\section*{L'idea dell'apprendimento}
+\section{L'idea dell'apprendimento}
 Cosa significa apprendere? Una domanda non così scontata per un azione che a diversi livelli compiamo lungo tutta la nostra vita. Ci troviamo ad imparare memorizzando concetti, dati, stimoli sensoriali dai cinque sensi e rielaboriamo tutto questo nel nostro cervello producendo idee nuove che derivano dagli elementi di partenza conservati nella nostra memoria.
 \\ 
 Un esempio banale è il contatto con un oggetto caldo, da una singola esperienza generalizzeremo l'idea che il dato oggetto con cui abbiamo avuto a che fare procuri la spiacevole sensazione di bruciare. Ma cosa accade se l'esperienza è più complessa? Ad esempio potremmo toccare un ferro da stiro bollente e farci l'idea che quell'oggetto dalla data forma del ferro sia intrinsecamente caldo, ma toccandolo in un momento in cui è spento non ci accadrebbe nulla, anzi percepiremmo il freddo della piastra metallica. La moltitudine di esperienze per un contesto simile può fornirci un'idea più chiara del perché di determinati avvenimenti. Avvicinandoci ad un ferro da stiro collegato alla corrente elettrica con la spina avremmo un ulteriore elemento di ragionamento in base al quale fare nuove ipotesi sullo stato dell'oggetto: conoscendo come funzionano gli elettrodomestici potremmo pensare che se il ferro è attaccato alla corrente potrebbe essere acceso e quindi caldo, potremmo pensare che sia rimasto attaccato alla corrente perché nessuno si è preoccupato di staccarlo e che quindi passato del tempo sia ormai freddo e che possa essere riposto senza bruciarsi. Tutto lineare e chiaro , sono intuizioni semplici per un adulto che ha vissuto una simile scena tante volte. 
@@ -6,7 +6,7 @@ Un esempio banale è il contatto con un oggetto caldo, da una singola esperienza
 Ma se fossimo un neonato ? Da adulti penseremmo che questo neonato non ha di certo dei genitori responsabili se si trova a giocare con un ferro da stiro, ma così è e da neonati in cui siamo sarà probabilmente la prima volta che vedremo questo oggetto cuneiforme e non avremo esperienze pregresse per deliberare quale tipo di interazione sia più intelligente avere con esso. Un bambino di un anno infatti non può sapere a cosa serve quell'oggetto, non può sapere che appartiene ad una classe degli oggetti della vita che può trovarsi nel duplice stato di acceso/spento, non può sapere che questi oggetti hanno un filo che li collega la muro e non può sapere che da quel filo passa l'energia a renderlo funzionante, non sanno tante cose. Ecco il punto del discorso, le esperienze ci insegnano a comprendere, inferire idee a partire dalla somma di altre. Il bimbo crescendo imparerà a capire che il ferro lo utilizza la mamma in determinate situazioni, imparerà a capire che solo una parte dell'oggetto può bruciare e capirà che dopo diverso tempo dopo che la mamma ha terminato di adoperarlo non brucerà più. Ma questa conoscenza da cosa sarà data? Sarà data con la serie di evidenze avute dal bambino nel toccare il ferro: ci saranno state volte in cui , vispo di curiosità, lo avrà avvicinato per vederlo meglio e sfiorandolo si sarà bruciato; altre volte la mamma , certa della sua esperienza gli avrà mostrato l'oggetto per farglielo conoscere e avvicinandolo non si sarà fatto male. Nella rete intricata di esperienze, sensazioni e fatti tangibili il cervello del bimbo imparerà a dare maggior peso ad alcuni elementi cognitivi piuttosto che ad altri realizzando dentro di lui una consapevolezza che si alimenta ed arricchisce nel tempo. Il bimbo imparerà a capire che lo stato caldo/freddo del ferrò dipenderà in larga parte dalla sua posizione nello spazio: vedendolo infatti riposto sullo scaffale dello sgabuzzino saprà che con probabilità non è stato usato di recente e che quindi non deve bruciare ; mentre darà poco peso, sempre nel determinare lo stato dell'oggetto, alla sua disposizione nel tempo: poco importerà che il ferro si trovi in salotto la mattina o la sera , sua mamma è una eccellente casalinga e può stirare a qualunque ora. Di conseguenza non potrà determinare dentro di lui l'idea di come il ferro sia, potrebbe averlo toccato una mattina ed essersi scottato così come potrebbe averlo toccato la sera successiva ed essersi scottato nuovamente... allora il bruciare del ferro non dipenderà dal momento della giornata. 
 \\
 Ecco , se questa metafora è stata ben digerita possiamo di certo approcciarci più facilmente con la spiegazione di come agisca l'algoritmo di backpropagation, l'algoritmo che aiuta le reti neurali a dare il giusto peso alle caratteristiche degli elementi che le reti analizzano. 
-\section*{La matematica dietro a backpropagation}
+\section{La matematica dietro a backpropagation}
 Il nostro algoritmo viene applicato in modo da riprogrammare ad ogni iterazione i parametri della rete , apprendendo via via la loro configurazione migliore per approssimare la funzione che risolve il nostro problema. Nell'apprendimento supervisionato delle reti FF di cui ci occupiamo alleniamo la rete fornendole un paragone con i risultati aspettati del set di training. Nel set di training sono quindi presenti i vettori di soluzione per ogni problema. Indichiamo con $ y(x)=(y_{1}, y_{2},\, \dots \, , y_{n})^{T} $ il vettore di $n$ dimensioni di output che ci aspetteremmo in uscita dalla  nostra rete; $y(x)$ è la funzione che la nostra rete vogliamo approssimi, la forma di questa funzione non è data e non si conosce a priori, conosciamo soltanto i suoi valori. BP valuta ad ogni iterazione ( o EPOCH ?) quanto lontano dal valore atteso è il risultato della rete, computa per cui una funzione dei costi
 \begin{equation}
 	C(w,b)\equiv\frac{1}{2n}\sum_{x} \parallel y(x)-a\parallel^{2}
@@ -33,7 +33,7 @@ w_{k}\rightarrow w'_{k}=w_{k}-\eta \dfrac{\partial C}{\partial w_{k}}
 \begin{equation}
 b_{l}\rightarrow b'_{l}=b_{l}-\eta \dfrac{\partial C}{\partial b_{l}}
 \end{equation}
-dove $k$ è il (FARSI AIUTARE A CAPIRE BENE k ED L). Ripetendo questa regola arriveremo a trovare il minimo della funzione.
+dove $k$ e $l$ variano, rispettivamente, tra tutti i pesi e i bias della rete. Ripetendo questa regola arriveremo a trovare il minimo della funzione.
 (SPIEGARE IL MINIBATCH E IL FATTO CHE È STOCASTICO IL GRADIENTE)
 %\begin{center}
 %\includegraphics[width=0.5\textwidth]{media_tesi/valley_with_ball.png}
@@ -58,6 +58,9 @@ Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati p
 \caption{Il grafico della funzione sigmoide $\sigma(z)$}
 \label{fig:subfig}
 \end{figure}
+
+[PARLARE QUI DI ReLu ?????]
+La sigmoide non è l'unica funzione adatta per le reti neurali. Si usa anche $tanh$ oppure, un altra funzione è la \textit{ReLu}(Rectified Linear Unit)  $\displaystyle f(x)=max(0,x)$ che venne resa popolare quando la \textit{AlexNet} vinse la sfida \textit{ImageNet}nel 2012, un concorso che premia i migliori algoritmi per l'\textit{object detection} e la classificazione delle immagini. La \textit{AlexNet} usava \textit{ReLu} come funzione di attivazione e da quel momento in poi altri la adottarono ai propri scopi rendendosi conto, in via empirica, che funzionava meglio di quanto usato fino a quel momento \cite{quora:relu}. Non è perfettamente chiaro cosa la renda migliore ma si pensa che la convergenza del metodo del gradiente venga velocizzata grazie a \textit{ReLu} grazie alla sua linearità e alla sua capacità di non saturarsi\cite{cs23}.
 
 Esiste una quantità $ a^{l}_{j} $ per ogni neurone $j$ nello strato $l$, possiamo annotare come un vettore questi $a$ output per tutti gli $n$ neuroni di quello strato $a^{l} = \left[a^{l}_{1},a^{l}_{2}, \cdots, a^{l}_{j}, \cdots, a^{l}_{n}  \right] $. Vediamo ora come di strato in strato i neuroni si attivano fra loro e per questo adottiamo una notazione matriciale di quanto abbiamo appena visto: denotiamo allora una matrice $w^{l}$ dei pesi per ogni layer della rete, dove le sue entry sono $w^{l}_{kj}$ i vari pesi che legano i neuroni fra lo strato $l-1$ ed $l$ e denotiamo, allo stesso modo di $a^{l}$ anche il vettore dei \textit{bias} $b^{l}$ per il livello $l$ e riscriviamo la formula 3 come:
 \begin{equation}
@@ -84,7 +87,7 @@ La regola di aggiornamento di un generico peso è questa:
 \end{equation}
 che altro non è che la procedura della discesa del gradiente spiegata in precedenza.
 
-\section*{I miglioramenti}
+\section{I miglioramenti}
 \subsection*{Migliorare backpropagation attraverso diversi approcci sulla discesa del gradiente}
 
 L'algoritmo di backpropagation si basa sull'ottimizzazione di una funzione d'errore tra l'output della rete e il risultato desiderato. La funzione in questione ha come variabili i pesi associati ai collegamenti tra i vari neuroni della rete e i loro bias. Nella sua versione più semplice la funzione cerca il proprio minimo seguendo la direzione del proprio gradiente.
@@ -112,7 +115,7 @@ Nel 1988 la ricerca aveva già riconosciuto la bontà della procedura BP e si in
 Fra le quattro euristiche di Jacobs vi era l'adattamento dei tassi d'apprendimento nel tempo e si spiega che ogni peso della rete dovrebbe avere il proprio tasso d'apprendimento specifico. Le implementazioni di queste euristiche venivano individuate nel \textit{momento} e nella regola d'apprendimento \textit{delta-bar-delta}.
 \subsection*{Low complexity NNs}
 Alcuni altri indirizzi di miglioramento dell'efficacia delle reti sfruttano il BP per modellare delle reti meno complesse (\textit{low complexity}) che possano essere utili a scopi meno sofisticati. Ad esempio, nelle reti convuluzionali, dove il processo di riconoscimento degli oggetti ha luogo, gli algoritmi vengono eseguiti su costese GPU che dissipano grandi quantità di energia e un tale scenario non è adatto a scopi dove il livello di dettaglio nel riconoscere gli oggetti non è così elevato. Applicazioni più popolari e frequenti come il riconoscimento facciale nei dispositivi mobili deve per forza di cose girare in locale sui processori embedded che animano gli smartphone, per questo i ricercatori sfruttano varianti del BP per creare reti convuluzionali a bassa complessità. Queste modellano problemi molto meno \textit{demanding} e possono quindi essere eseguite più velocemente anche sui dispositivi meno prestanti\cite{TSD}.
-\subsection*{Le performance tra CPU e GPU}
+\subsection*{Le performance con CPU e GPU}
 Nella sezione riguardante la matematica di backpropagation abbiamo citato come i calcoli per le attivazioni dei neuroni non vengano eseguiti uno alla volta ma , livello per livello, ma vengano raggruppati in vettori e matrici non solo per snellire la notazione usata ma anche perché a tutti gli effetti è quello che accade realmente. La quantità di dati coinvolta in una rete neurale può essere davvero notevole, con lo strato di input che può avere fino a migliaia di nodi, per questo le matrici che vengono coinvolte nei calcoli possono diventare molto grandi ed occupare notevoli quantità di spazio in memoria.\\ 
 
 Tale utilizzo di memoria costituisce un limite difficile per la computazione da parte delle CPU, anche quelle multi-core. Le CPU ottimizzano la velocità di calcolo sui singoli processi seriali e sono un'alternativa ad un altro tipo di architettura per processori: le GPU. Le GPU furono inventate nel 1999 DA Nvidia per la grafica dei PC e nel 2007 gli sviluppatori poterono sfruttare le potenzialità di calcolo parallelo anche per applicazioni più generiche grazie alla piattaforma di programmazione \textit{CUDA}. Nel 2009 [INSERIRE NOTA DA QUI: https://www.quora.com/Who-introduced-GPU-to-deep-learning] un documento accademico di Stanford illustrava quanto più velocemente si potesse addestrare delle reti neurali utilizzando metodi con GPU , fino a 70 volte più veloci della controparte con CPU. Tale approccio consentì l'uso di dataset più ricchi e un aumento dei parametri a disposizione per settare la rete. Altri benefici collegati all'introduzione delle schede grafiche furono una democratizzazione della ricerca sull'AI. I costi derivati dall'attività di ricerca diminuirono, evitando l'utilizzo di cluster di CPU e molti più laboratori in giro per il mondo poterono contribuire all'avanzamento del settore. 
@@ -121,21 +124,21 @@ Ma perchè le GPU? Tanta più memoria si necessita per sviluppare i calcoli di q
 \\
 Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali nello svolgere il medesimo compito , una implementata su GPU l'altra su CPU. L'esperimento consiste nel riconoscere cifre numeriche scritte a mano, presentate in un dataset chiamato \textit{MNIST} , come quelle in figura. Presentiamo i risultati delle velocità di computazione nella tabella e nel grafico riportato sotto, dai quali possiamo evidenziare come aver allenato la rete neurale attraverso la GPU aumenti di un fattore molto grande le performance rispetto alla controparte in CPU e che la GPU sia da preferire quando nella rete sono presenti un grande numero di ATTRIBUTI (SPECIFICARE MEGLIO), altrimenti il costo dell'inizializzazione della scheda non verrebbe giustificato dall'incremento delle velocità \cite{brito2016gpu}.
 
-\begin{figure}[hbtb]
+\begin{figure}[t]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/table_experiment.png}}
 \caption{Riassunto dei risultati dell'esperimento }
 \label{fig:subfig}
 \end{figure}
 
-\begin{figure}[hbtb]
+\begin{figure}[h]
 \centering
 {\includegraphics[scale=0.5]{media_tesi/graph_GPU_vs_CPU.png}}
 \caption{Il grafico che mostra le differenze tra le velocità di esecuzione tra CPU e GPU}
 \label{fig:subfig}
 \end{figure}
 
-\begin{figure}[hbtb]
+\begin{figure}[b]
 \centering
 {\includegraphics[scale=0.5]{media_tesi/MNIST.png}}
 \caption{Un esempio di cifre da riconoscere da parte della reti nell'esperimento}

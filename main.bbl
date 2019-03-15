@@ -1,12 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{pytorch:docs}
+End-to-end deep learning platform.
+\newblock [Online; accessed 14-March-2019].
 
 \bibitem{stanford_history}
-{}.
-\newblock {History of neural networks}.
+{History of neural networks}.
 \newblock
   \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/index.html},
   2010.
 \newblock Online; accessed 28 Febraury 2019.
+
+\bibitem{maruti:mxnet}
+Top 8 deep learning frameworks, 2018.
+\newblock [Online; accessed 15-March-2019].
 
 \bibitem{brito2016gpu}
 Ricardo Brito, Simon Fong, Kyungeun Cho, Wei Song, Raymond Wong, Sabah
@@ -15,11 +22,55 @@ Ricardo Brito, Simon Fong, Kyungeun Cho, Wei Song, Raymond Wong, Sabah
   recognition in parallel.
 \newblock {\em The Journal of Supercomputing}, 72(10):3868--3886, 2016.
 
+\bibitem{wiki:caffe2}
+Wikipedia contributors.
+\newblock Caffe (software), 2019.
+\newblock [Online; accessed 1-March-2019].
+
+\bibitem{quora:relu}
+Prasoon Goyal.
+\newblock An answer to the question 'why is relu the most common activation
+  function used in neural networks?', 2018.
+\newblock [Online; accessed 14-March-2019].
+
+\bibitem{cs23}
+Andrej Karpathy.
+\newblock Biological motivation and connections.
+\newblock [Online; accessed 15-March-2019].
+
+\bibitem{oreilly:pytorch_intro}
+Ben Lorica.
+\newblock Why ai and machine learning researchers are beginning to embrace
+  pytorch, 2017.
+\newblock [Online; accessed 13-March-2019].
+
+\bibitem{quora:mxnet}
+Jean-Louis Queguiner.
+\newblock An answer to the question 'how is mxnet still surviving as a
+  framework in front of tensorflow?', 2018.
+\newblock [Online; accessed 15-March-2019].
+
 \bibitem{saito1997partial}
 Kazumi Saito and Ryohei Nakano.
 \newblock Partial bfgs update and efficient step-length calculation for
   three-layer neural networks.
 \newblock {\em Neural Computation}, 9(1):123--141, 1997.
+
+\bibitem{caffe_announcement}
+The~Facebook team.
+\newblock Caffe2 open source brings cross platform machine learning tools to
+  developers, 2017.
+\newblock [Online; accessed 14-March-2019].
+
+\bibitem{caffe_c++}
+The~Facebook team.
+\newblock Caffe2 with c++, 2017.
+\newblock [Online; accessed 14-March-2019].
+
+\bibitem{caffe_intro}
+The~Facebook team.
+\newblock What is caffe2?, 2017.
+\newblock [Online; accessed 14-March-2019].
 
 \bibitem{quora:why_gpu}
 {Tim Dettmers}.

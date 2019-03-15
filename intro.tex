@@ -1,21 +1,26 @@
-\section*{L'ispirazione biologica}
+.... le reti neurali sono una tecnica di ml ma non sono l'unica esistente anche se al momento stanno avendo ampio successo.
+
+\section{L'ispirazione biologica}
 %\vspace{-2cm}
-Il cervello umano è composto da circa 10 miliardi di neuroni. Nella figura riportata in bassa attorno al nucleo di colore verde si estende il corpo cellulare delle cellule neurali , dette \textit{soma} e i canali di input ed output che la circondano la collegano a circa altri 10000 (dieci mila) neuroni.
-Ogni neurone riceve degli stimoli elettrochimici dai neuroni circostanti attraverso i proprio dendriti. Se la somma degli input elettrici è potente abbastanza il neurone trasmette a sua volta un segnale elettrochimico lungo l'assone , che viene diffuso a tutti quei neuroni i cui dendriti sono connessi alle terminazione del neurone in oggetto.
-Per quel che vedremo in seguito è importante sottolineare come il neurone attivi il segnale in uscita solo se il segnale in ingresso totale raggiunge un certo livello, a quel punto il neurone attiva il proprio impulso, secondo un unico livello di segnale, ovvero, non ci sono sfumature di attivazione, o il segnale in uscita viene propagato o non viene propagato, non esistono segnali di potenza variabile da distribuire verso i neuroni connessi.
-Il nostro intero cervello è quindi composto interamente da questa fitta rete di cellule, i neuroni, che comunicano fra loro attraverso segnali elettrochimici. E' sorprendente vedere come la struttura alla base molto semplice, costituita da una cellula che sommando dei segnali in ingresso si attiva , o meno, comunicando con altre cellule attraverso segnali in uscita, riesca nel suo complesso reticolo di interazioni a svolgere funzioni complicate come quelle del cervello nella sua totalità.
-Lo studio del cervello e la sua comprensione ha potuto ispirare i modelli scientifici e matematici che oggi danno vita a quelle che sono dette oggi \textit{reti neurali artificiali (ANN)}.
+Il cervello umano è composto da circa 86 miliardi di neuroni e un numero totale di collegamenti fra loro di $10^{14}$. Nella figura \ref{biologia-neuroni} attorno al nucleo di colore verde si estende il corpo cellulare delle cellule neurali, dette \textit{soma}, e i canali di input ed output che la circondano la collegano a circa altri 10000 neuroni.
+Ogni neurone riceve degli stimoli elettrochimici dai neuroni circostanti attraverso i proprio dendriti. Se la somma degli input elettrici è sufficientemente elevata il neurone trasmette a sua volta un segnale elettrochimico lungo l'assone, che viene diffuso a tutti quei neuroni i cui dendriti sono connessi alle terminazione del neurone in oggetto.
+Per quel che vedremo in seguito è importante sottolineare come il neurone attivi il segnale in uscita solo se la totalità dei segnali in ingresso raggiunge un certo livello, a quel punto il neurone propaga il proprio impulso, senza sfumature di attivazione, o il segnale in uscita viene propagato o non viene propagato, non esistono segnali di potenza variabile da distribuire verso i neuroni connessi.
+Il nostro intero cervello è quindi composto interamente da questa fitta rete di cellule, i neuroni, che comunicano fra loro attraverso segnali elettrochimici. \`E sorprendente vedere come la struttura alla base molto semplice, costituita da una cellula che a seconda della somma dei segnali in ingresso si attiva, o meno, comunicando con altre cellule attraverso segnali in uscita, riesca nel suo complesso reticolo di interazioni a svolgere funzioni complicate come quelle del cervello nella sua totalità.
+Lo studio del cervello e la sua comprensione ha potuto ispirare i modelli scientifici e matematici che danno vita a quelle che sono dette \textit{reti neurali artificiali (in inglese \textit{Artificial Neural Networks}, ANN)}.
 
 \begin{figure}
 
 \centering
 
 \subfloat[][\emph{An impression of a real neuron. This image is a light microscope photograph by John Anderson, Institute for Neuroinformatics, Zurich, Switzerland.  }]
-{\includegraphics[width=.65\textwidth]{media_tesi/real_neuron.png}} \\
-\subfloat[][\emph{A biological neuron model}]
-{\includegraphics[width=.65\textwidth]{media_tesi/neuron_model.png}} \\
+{\includegraphics[width=.85\textwidth]{media_tesi/real_neuron.png}} \\
 
-\label{fig:subfig}
+
+
+\subfloat[][\emph{A biological neuron model}]
+{\includegraphics[width=.95\textwidth]{media_tesi/neuron_model.png}} \\
+
+\label{biologia-neuroni}
 \end{figure}
 
 \section*{La storia delle reti neurali}
@@ -33,7 +38,7 @@ L'interesse verso le reti neurali artificiali si rinnovò nel 1982 quando  John 
 Nel 1986 arriviamo ad una svolta che diventa centrale nel corso di questa relazione, ovvero, lo sviluppo dell'idea del backpropagation error. Tre gruppi indipendenti di sviluppatori, tra i quali compariva David Rumelhart, un ex professore di Stanford del dipartimento di psicologia, arrivarono sempre indipendentemente all'idea  di distribuire gli errori prodotti dalla computazione della rete su tutta la rete stessa in modo da riprogrammarne i parametri e farla apprendere dai propri errori.
 Quelle che prima abbiamo chiamato reti "ibride" avevano solo due layer mentre queste nuove reti a retropropagazione dell'errore presentavano molti livelli e , dato lo stato dell'arte degli hardware del tempo, erano ritenute molto lente; e così hanno proseguito ad essere, tanto che negli anni 2000, le computazioni potevano richiedere settimane intere. Così è stato finché i recenti sviluppi degli ultimi anni hanno messo a disposizione delle reti hardware performanti e notevoli quantità di dati da cui le reti possano trarre informazioni ed imparare \cite{stanford_history}.
 
-\section*{I diversi tipi rete neurale}
+\section{I diversi tipi rete neurale}
 Al giorno d'oggi le reti neurali sono tante e diverse tra loro, vengono riconosciute con l'utilizzo di sigle sempre più lunghe e in questa sezione vedremo alcune delle principali. Ad alcune accenneremo solamente mentre altre non verranno nemmeno citate per via del loro numero elevato.
 Le reti neurali biologiche hanno ispirato le reti neurali artificiali che vengono utilizzate per approssimare delle funzioni che non sono conosciute a priori \cite{wiki:tipi} e questo costituisce, semplicisticamente, un ribaltamento del classico paradigma con cui usiamo i computer: la programmazione infatti usa funzioni impostate dal programmatore per computare dei dati in output mentre le reti neurali cercano di creare una funzione a partire da dati forniti.
 e questo costituisce, semplicisticamente, un ribaltamento del classico paradigma con cui usiamo i computer: la programmazione infatti usa funzioni impostate dal programmatore per computare dei dati in output mentre le reti neurali cercano di creare una funzione a partire da dati forniti.

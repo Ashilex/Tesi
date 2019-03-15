@@ -1,4 +1,4 @@
-\documentclass [12pt ,a4paper ,twoside ,openright ]{book}
+\documentclass [12pt ,a4paper,openany]{book}
 \special{papersize=210mm,297mm}
 \setlength{\topmargin}{0in}
 \usepackage[utf8]{inputenc}
@@ -13,6 +13,7 @@
 \usepackage{subfig}
 \usepackage{float}
 \usepackage{titlesec}
+\renewcommand{\baselinestretch}{1.25}
 
 %PACCHETTI PER LA MATEMATICA
 \usepackage{amssymb}
@@ -24,7 +25,9 @@
 
 \begin{document}
 
-\title{L'algoritmo di back propagation error nelle reti neurali e la loro evoluzione in reti neurali profonde}
+
+
+\title{Reti neurali: dall'algoritmo di back propagation alle reti profonde }
 \author{Alessandro Sassi}
 \date{Today}
 
@@ -37,12 +40,14 @@
 
 \input{frontespizio}
 %\vspace{-4cm}
-\chapter*{Introduzione}
+
+\tableofcontents
+\chapter{Introduzione}
 %\vspace{-4cm}
 \input{intro}
-\chapter*{L'algoritmo di Backpropagation }
+\chapter{L'algoritmo di Backpropagation }
 \input{bp}
-\chapter*{I framework per le reti neurali}
+\chapter{I framework per le reti neurali}
 \input{frameworks}
 
 \bibliographystyle{plain}
