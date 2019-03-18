@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  15 MAR 2019 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.3.1)  17 MAR 2019 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,6 +707,12 @@ LaTeX Warning: Label `fig:subfig' multiply defined.
 
 LaTeX Warning: Label `fig:subfig' multiply defined.
 
+
+LaTeX Warning: Label `fig:subfig' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -863,66 +869,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Capitolo 1.
 (./intro.tex
 
-Package caption Warning: \label without proper reference on input line 23.
-See the caption package documentation for explanation.
-
-
 LaTeX Warning: Reference `biologia-neuroni' on page 4 undefined on input line 5
 .
 
-<media_tesi/real_neuron.png, id=97, 439.6425pt x 279.0425pt>
+<media_tesi/real_neuron.png, id=96, 439.6425pt x 279.0425pt>
 File: media_tesi/real_neuron.png Graphic file (type png)
 
 <use media_tesi/real_neuron.png>
-Package pdftex.def Info: media_tesi/real_neuron.png used on input line 16.
-(pdftex.def)             Requested size: 385.02547pt x 244.38298pt.
+Package pdftex.def Info: media_tesi/real_neuron.png used on input line 13.
+(pdftex.def)             Requested size: 285.76424pt x 181.37546pt.
 
-<media_tesi/neuron_model.png, id=98, 760.8425pt x 325.215pt>
+<media_tesi/neuron_model.png, id=97, 760.8425pt x 325.215pt>
 File: media_tesi/neuron_model.png Graphic file (type png)
 
 <use media_tesi/neuron_model.png>
-Package pdftex.def Info: media_tesi/neuron_model.png used on input line 21.
-(pdftex.def)             Requested size: 430.31812pt x 183.94034pt.
- [4
+Package pdftex.def Info: media_tesi/neuron_model.png used on input line 20.
+(pdftex.def)             Requested size: 494.54176pt x 211.38724pt.
 
-] [5 <./media_tesi/real_neuron.png> <./media_tesi/neuron_model.png>] [6] [7]pdf
-TeX warning (ext4): destination with the same identifier (name{subfigure.1.1.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \subfloat
-              [][\emph{un perceptrone}]
-<media_tesi/perceptron.png, id=131, 88.83188pt x 64.74188pt>
+Overfull \hbox (41.57387pt too wide) in paragraph at lines 20--21
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4
+
+] [5 <./media_tesi/real_neuron.png> <./media_tesi/neuron_model.png>] [6
+
+]
+[7] <media_tesi/perceptron.png, id=142, 88.83188pt x 64.74188pt>
 File: media_tesi/perceptron.png Graphic file (type png)
 
 <use media_tesi/perceptron.png>
-Package pdftex.def Info: media_tesi/perceptron.png used on input line 52.
+Package pdftex.def Info: media_tesi/perceptron.png used on input line 70.
 (pdftex.def)             Requested size: 115.48141pt x 84.16441pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
-.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.53 \subfloat
-              [][\emph{una FF}]
-<media_tesi/feed_forward.png, id=132, 101.62968pt x 65.49469pt>
+
+<media_tesi/feed_forward.png, id=143, 101.62968pt x 65.49469pt>
 File: media_tesi/feed_forward.png Graphic file (type png)
 
 <use media_tesi/feed_forward.png>
-Package pdftex.def Info: media_tesi/feed_forward.png used on input line 54.
+Package pdftex.def Info: media_tesi/feed_forward.png used on input line 72.
 (pdftex.def)             Requested size: 132.11856pt x 85.14305pt.
 
-<media_tesi/DFF.png, id=133, 137.01187pt x 129.48375pt>
+<media_tesi/DFF.png, id=144, 137.01187pt x 129.48375pt>
 File: media_tesi/DFF.png Graphic file (type png)
 
 <use media_tesi/DFF.png>
-Package pdftex.def Info: media_tesi/DFF.png used on input line 56.
+Package pdftex.def Info: media_tesi/DFF.png used on input line 74.
 (pdftex.def)             Requested size: 109.60963pt x 103.58711pt.
 
-<media_tesi/DCN.png, id=134, 258.21469pt x 157.33781pt>
+<media_tesi/DCN.png, id=146, 258.21469pt x 157.33781pt>
 File: media_tesi/DCN.png Graphic file (type png)
 
 <use media_tesi/DCN.png>
-Package pdftex.def Info: media_tesi/DCN.png used on input line 65.
+Package pdftex.def Info: media_tesi/DCN.png used on input line 83.
 (pdftex.def)             Requested size: 180.74904pt x 110.13571pt.
  [8 <./media_tesi/perceptron.png> <./media_tesi/feed_forward.png> <./media_tesi
 /DFF.png> <./media_tesi/DCN.png>]) [9]
@@ -930,7 +931,7 @@ Capitolo 2.
 (./bp.tex [10
 
 ] [11]
-<media_tesi/valley_with_ball.png, id=156, 815.045pt x 614.295pt>
+<media_tesi/valley_with_ball.png, id=178, 815.045pt x 614.295pt>
 File: media_tesi/valley_with_ball.png Graphic file (type png)
 
 <use media_tesi/valley_with_ball.png>
@@ -944,116 +945,131 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 4713) has occurred while \output is active []
 
  [13 <./media_tesi/valley_with_ball.png>]
-<media_tesi/sigmoide.png, id=176, 547.2947pt x 337.26pt>
+<media_tesi/sigmoide.png, id=197, 399.74344pt x 241.65282pt>
 File: media_tesi/sigmoide.png Graphic file (type png)
 
 <use media_tesi/sigmoide.png>
-Package pdftex.def Info: media_tesi/sigmoide.png used on input line 57.
-(pdftex.def)             Requested size: 203.83417pt x 125.60762pt.
- [14 <./media_tesi/sigmoide.png (PNG copy)>]
+Package pdftex.def Info: media_tesi/sigmoide.png used on input line 56.
+(pdftex.def)             Requested size: 203.83417pt x 123.22285pt.
+File: media_tesi/sigmoide.png Graphic file (type png)
+ <use media_tesi/sigmoide.png>
+Package pdftex.def Info: media_tesi/sigmoide.png used on input line 64.
+(pdftex.def)             Requested size: 203.83417pt x 123.22285pt.
+
+<media_tesi/relu.png, id=198, 362.10281pt x 255.20343pt>
+File: media_tesi/relu.png Graphic file (type png)
+
+<use media_tesi/relu.png>
+Package pdftex.def Info: media_tesi/relu.png used on input line 66.
+(pdftex.def)             Requested size: 185.71849pt x 130.89189pt.
+ [14 <./media_tesi/sigmoide.png (PNG copy)>] [15 <./media_tesi/relu.png (PNG co
+py)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-[16]
-<media_tesi/learning_trajectories_of_second_order.jpeg, id=203, 554.07pt x 712.
+ [16]
+<media_tesi/learning_trajectories_of_second_order.jpeg, id=230, 554.07pt x 712.
 16063pt>
 File: media_tesi/learning_trajectories_of_second_order.jpeg Graphic file (type 
 jpg)
  <use media_tesi/learning_trajectories_of_second_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_second_order.jpeg 
-used on input line 102.
+used on input line 110.
 (pdftex.def)             Requested size: 203.83417pt x 261.9957pt.
 
-<media_tesi/learning_trajectories_of_first_order.jpeg, id=204, 545.03625pt x 50
+<media_tesi/learning_trajectories_of_first_order.jpeg, id=231, 545.03625pt x 50
 9.65407pt>
 File: media_tesi/learning_trajectories_of_first_order.jpeg Graphic file (type j
 pg)
  <use media_tesi/learning_trajectories_of_first_order.jpeg>
 Package pdftex.def Info: media_tesi/learning_trajectories_of_first_order.jpeg u
-sed on input line 104.
+sed on input line 112.
 (pdftex.def)             Requested size: 203.83417pt x 190.59875pt.
- [17 <./media_tesi/learning_trajectories_of_second_order.jpeg> <./media_tesi/le
-arning_trajectories_of_first_order.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-[18] <media_tesi/table_experiment.png, id=220, 651.18282pt x 188.20313pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./media_tesi/learning_trajectories_of_second_order.jpeg> <./media_tesi/le
+arning_trajectories_of_first_order.jpeg>]
+Underfull \vbox (badness 1540) has occurred while \output is active []
+
+ [19]
+<media_tesi/table_experiment.png, id=256, 651.18282pt x 188.20313pt>
 File: media_tesi/table_experiment.png Graphic file (type png)
 
 <use media_tesi/table_experiment.png>
-Package pdftex.def Info: media_tesi/table_experiment.png used on input line 129
+Package pdftex.def Info: media_tesi/table_experiment.png used on input line 137
 .
 (pdftex.def)             Requested size: 423.26381pt x 122.33057pt.
 
-<media_tesi/graph_GPU_vs_CPU.png, id=221, 776.9025pt x 578.16pt>
+<media_tesi/graph_GPU_vs_CPU.png, id=257, 776.9025pt x 578.16pt>
 File: media_tesi/graph_GPU_vs_CPU.png Graphic file (type png)
 
 <use media_tesi/graph_GPU_vs_CPU.png>
-Package pdftex.def Info: media_tesi/graph_GPU_vs_CPU.png used on input line 136
+Package pdftex.def Info: media_tesi/graph_GPU_vs_CPU.png used on input line 144
 .
 (pdftex.def)             Requested size: 388.45029pt x 289.07928pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<media_tesi/MNIST.png, id=222, 449.42906pt x 230.36063pt>
+<media_tesi/MNIST.png, id=258, 449.42906pt x 230.36063pt>
 File: media_tesi/MNIST.png Graphic file (type png)
 
 <use media_tesi/MNIST.png>
-Package pdftex.def Info: media_tesi/MNIST.png used on input line 143.
+Package pdftex.def Info: media_tesi/MNIST.png used on input line 151.
 (pdftex.def)             Requested size: 224.71397pt x 115.18002pt.
-) [19 <./media_tesi/table_experiment.png (PNG copy)>] [20 <./media_tesi/graph_G
-PU_vs_CPU.png (PNG copy)> <./media_tesi/MNIST.png (PNG copy)>]
+) [20 <./media_tesi/table_experiment.png (PNG copy)> <./media_tesi/graph_GPU_vs
+_CPU.png (PNG copy)>] [21 <./media_tesi/MNIST.png (PNG copy)>]
 Capitolo 3.
 (./frameworks.tex
-<media_tesi/keras_logo.png, id=237, 225.84375pt x 225.84375pt>
+<media_tesi/keras_logo.png, id=271, 225.84375pt x 225.84375pt>
 File: media_tesi/keras_logo.png Graphic file (type png)
 
 <use media_tesi/keras_logo.png>
 Package pdftex.def Info: media_tesi/keras_logo.png used on input line 6.
 (pdftex.def)             Requested size: 112.92159pt x 112.92159pt.
 
-<media_tesi/ts_logo.png, id=238, 217.81375pt x 232.87pt>
+<media_tesi/ts_logo.png, id=272, 217.81375pt x 232.87pt>
 File: media_tesi/ts_logo.png Graphic file (type png)
 
 <use media_tesi/ts_logo.png>
 Package pdftex.def Info: media_tesi/ts_logo.png used on input line 8.
 (pdftex.def)             Requested size: 108.9066pt x 116.43471pt.
 
-<media_tesi/pytorch_logo.png, id=239, 225.84375pt x 225.84375pt>
+<media_tesi/pytorch_logo.png, id=273, 225.84375pt x 225.84375pt>
 File: media_tesi/pytorch_logo.png Graphic file (type png)
 
 <use media_tesi/pytorch_logo.png>
 Package pdftex.def Info: media_tesi/pytorch_logo.png used on input line 10.
 (pdftex.def)             Requested size: 135.50728pt x 135.50728pt.
 
-<media_tesi/caffe2_logo.png, id=240, 210.7875pt x 240.9pt>
+<media_tesi/caffe2_logo.png, id=274, 210.7875pt x 240.9pt>
 File: media_tesi/caffe2_logo.png Graphic file (type png)
 
 <use media_tesi/caffe2_logo.png>
 Package pdftex.def Info: media_tesi/caffe2_logo.png used on input line 12.
 (pdftex.def)             Requested size: 126.47346pt x 144.5411pt.
 
-<media_tesi/theano_logo.png, id=241, 384.6872pt x 252.19218pt>
+<media_tesi/theano_logo.png, id=275, 384.6872pt x 252.19218pt>
 File: media_tesi/theano_logo.png Graphic file (type png)
 
 <use media_tesi/theano_logo.png>
 Package pdftex.def Info: media_tesi/theano_logo.png used on input line 14.
 (pdftex.def)             Requested size: 115.40704pt x 75.65823pt.
 
-<media_tesi/mx_logo.png, id=242, 291.33844pt x 290.58563pt>
+<media_tesi/mx_logo.png, id=276, 291.33844pt x 290.58563pt>
 File: media_tesi/mx_logo.png Graphic file (type png)
 
 <use media_tesi/mx_logo.png>
 Package pdftex.def Info: media_tesi/mx_logo.png used on input line 16.
 (pdftex.def)             Requested size: 116.53331pt x 116.23218pt.
- [21
+ [22
 
  <./media_tesi/keras_logo.png> <./media_tesi/ts_logo.png> <./media_tesi/pytorch
 _logo.png> <./media_tesi/caffe2_logo.png> <./media_tesi/theano_logo.png (PNG co
 py)> <./media_tesi/mx_logo.png (PNG copy)>]
-[22] [23]) (./main.bbl [24]
+[23] [24]) (./main.bbl [25]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1064,11 +1080,17 @@ Underfull \hbox (badness 3118) in paragraph at lines 8--13
 cs . stanford . edu / people / eroberts /
  []
 
-[25
+[26
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 139--145
+\T1/cmtt/m/n/12 eroberts / courses / soco / projects / neural-[]networks / Hist
+ory / index . html$[]\T1/cmr/m/n/12 ,
+ []
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
- [26]
+ [27] [28]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
@@ -1084,13 +1106,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9834 strings out of 494351
- 140899 string characters out of 6164197
- 349730 words of memory out of 5000000
- 12894 multiletter control sequences out of 15000+600000
- 19951 words of font info for 48 fonts, out of 8000000 for 9000
+ 9877 strings out of 494351
+ 141658 string characters out of 6164197
+ 350181 words of memory out of 5000000
+ 12917 multiletter control sequences out of 15000+600000
+ 21650 words of font info for 56 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 44i,10n,49p,2610b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,49p,2566b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt120
 0.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/e
 cti1000.600pk> </home/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknappe
@@ -1106,18 +1128,20 @@ o/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/ale
 ssandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
 me/alessandro/.texlive2016/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb>
-Output written on main.pdf (26 pages, 1271722 bytes).
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb>
+Output written on main.pdf (28 pages, 1294815 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

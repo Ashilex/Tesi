@@ -8,45 +8,45 @@ Warning--to sort, need author or key in stanford_history
 Warning--to sort, need author or key in pytorch:docs
 Warning--to sort, need author or key in maruti:mxnet
 Warning--empty journal in TSD
-You've used 16 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            564 strings with 5889 characters,
-and the built_in function-call counts, 3745 in all, are:
-= -- 346
-> -- 152
-< -- 0
-+ -- 66
-- -- 48
-* -- 180
-:= -- 607
-add.period$ -- 46
-call.type$ -- 16
-change.case$ -- 72
+            631 strings with 7505 characters,
+and the built_in function-call counts, 7140 in all, are:
+= -- 681
+> -- 304
+< -- 1
++ -- 131
+- -- 98
+* -- 395
+:= -- 1180
+add.period$ -- 80
+call.type$ -- 27
+change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 123
-empty$ -- 363
-format.name$ -- 48
-if$ -- 799
+cite$ -- 31
+duplicate$ -- 251
+empty$ -- 637
+format.name$ -- 98
+if$ -- 1504
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 3
-newline$ -- 81
-num.names$ -- 26
-pop$ -- 141
+int.to.str$ -- 27
+missing$ -- 14
+newline$ -- 137
+num.names$ -- 48
+pop$ -- 207
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 102
 quote$ -- 0
-skip$ -- 109
+skip$ -- 198
 stack$ -- 0
-substring$ -- 138
-swap$ -- 15
-text.length$ -- 0
+substring$ -- 349
+swap$ -- 36
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 102
 warning$ -- 4
-while$ -- 30
-width$ -- 18
-write$ -- 157
+while$ -- 63
+width$ -- 29
+write$ -- 276
 (There were 5 warnings)
