@@ -22,7 +22,7 @@ Data una funzione di due o più variabili, il suo gradiente in un punto $x=(x_{1
 \begin{figure}[hbtb]
 \centering
 {\includegraphics[width=.45\textwidth]{media_tesi/valley_with_ball.png}}
-\caption{Il grafico della funzione $C(v_{1}, v_{2})$ con la pallina verde che rappresenta il punto in analisi e il vettore gradiente spiccato da esso, ad indicare in quale direzione moverebbe nella discesa}
+\caption{Il grafico della funzione $C(v_{1}, v_{2})$ con la pallina verde che rappresenta il punto in analisi e l'opposto del vettore gradiente spiccato da esso, ad indicare in quale direzione moverebbe nella discesa}
 \label{fig:subfig}
 \end{figure}
 
@@ -51,12 +51,12 @@ Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati p
 	\sigma(z)=\dfrac{1}{1+e^{-z}}
 \end{equation}
 
-\begin{figure}[hbtb]
-\centering
-{\includegraphics[width=.45\textwidth]{media_tesi/sigmoide.png}}
-\caption{Il grafico della funzione sigmoide $\sigma(z)$}
-\label{fig:subfig}
-\end{figure}
+%\begin{figure}[hbtb]
+%\centering
+%{\includegraphics[width=.45\textwidth]{media_tesi/sigmoide.png}}
+%\caption{Il grafico della funzione sigmoide $\sigma(z)$}
+%\label{fig:subfig}
+%\end{figure}
 
 \begin{figure}[hbtb]
 \centering
@@ -68,7 +68,7 @@ Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati p
 \label{fig:subfig}
 \end{figure}
 
-La sigmoide non è l'unica funzione adatta per le reti neurali. Si usa anche $tanh$ oppure, un altra funzione è la \textit{ReLu}(Rectified Linear Unit)  $\displaystyle f(z)=max(0,z)$ che venne resa popolare quando la \textit{AlexNet} vinse la sfida \textit{ImageNet}nel 2012, un concorso che premia i migliori algoritmi per l'\textit{object detection} e la classificazione delle immagini. La \textit{AlexNet} usava \textit{ReLu} come funzione di attivazione e da quel momento in poi altri la adottarono ai propri scopi rendendosi conto, in via empirica, che funzionava meglio di quanto usato fino a quel momento \cite{quora:relu}. Non è perfettamente chiaro cosa la renda migliore ma si pensa che la convergenza del metodo del gradiente venga velocizzata grazie a \textit{ReLu} grazie alla sua linearità e alla sua capacità di non saturarsi\cite{cs23}.
+La sigmoide non è l'unica funzione adatta per le reti neurali. Si usa anche $tanh$ oppure, un altra funzione è la \textit{ReLu}(Rectified Linear Unit)  $\displaystyle f(z)=max(0,z)$ che venne resa popolare quando la \textit{AlexNet} vinse la sfida \textit{ImageNet}nel 2012, un concorso che premia i migliori algoritmi per l'\textit{object detection} e la classificazione delle immagini. La \textit{AlexNet} usava \textit{ReLu} come funzione di attivazione e da quel momento in poi altri la adottarono ai propri scopi rendendosi conto, in via empirica, che funzionava meglio di quanto usato fino a quel momento \cite{quora:relu}. Non è perfettamente chiaro cosa la renda migliore ma si pensa che la convergenza del metodo del gradiente venga velocizzata da \textit{ReLu} grazie alla sua linearità e alla sua capacità di non saturarsi\cite{cs23}.
 
 L'output di un neurone è denotato da $ a^{l}_{j} $ per ogni neurone $j$ nello strato $l$, possiamo definire un vettore contenente questi output per tutti gli $n$ neuroni di quello strato $a^{l} = \left[a^{l}_{1},a^{l}_{2}, \cdots, a^{l}_{j}, \cdots, a^{l}_{n}  \right] $. Vediamo ora come di strato in strato i neuroni si attivano fra loro e per questo adottiamo una notazione matriciale di quanto abbiamo appena visto: denotiamo allora una matrice $w^{l}$ dei pesi per ogni layer della rete, dove le sue entry sono $w^{l}_{kj}$ i vari pesi che legano i neuroni fra lo strato $l-1$ ed $l$ e denotiamo, allo stesso modo di $a^{l}$ anche il vettore dei \textit{bias} $b^{l}$ per il livello $l$ e riscriviamo la formula 3 come:
 \begin{equation}
@@ -126,23 +126,23 @@ Alcuni altri indirizzi di miglioramento dell'efficacia delle reti sfruttano il B
 \subsection*{Le performance con CPU e GPU}
 Nella sezione riguardante la matematica di backpropagation abbiamo citato come i calcoli per le attivazioni dei neuroni non vengano eseguiti uno alla volta ma, livello per livello, vengano raggruppati in vettori e matrici non solo per snellire la notazione usata ma anche perché a tutti gli effetti è quello che accade realmente. La quantità di dati coinvolta in una rete neurale può essere davvero notevole, con lo strato di input che può avere fino a migliaia di nodi, per questo le matrici che vengono coinvolte nei calcoli possono diventare molto grandi ed occupare notevoli quantità di spazio in memoria.\\ 
 
-Tale utilizzo di memoria costituisce un limite difficile per la computazione da parte delle CPU, anche quelle multi-core. Le CPU ottimizzano la velocità di calcolo sui singoli processi seriali e sono un'alternativa ad un altro tipo di architettura per processori: le GPU. Le GPU furono inventate nel 1999 DA Nvidia per la grafica dei PC e nel 2007 gli sviluppatori poterono sfruttare le potenzialità di calcolo parallelo anche per applicazioni più generiche grazie alla piattaforma di programmazione \textit{CUDA}. Nel 2009 [INSERIRE NOTA DA QUI: https://www.quora.com/Who-introduced-GPU-to-deep-learning] un documento accademico di Stanford illustrava quanto più velocemente si potesse addestrare delle reti neurali utilizzando metodi con GPU, fino a 70 volte più veloci della controparte con CPU. Tale approccio consentì l'uso di dataset più ricchi e un aumento dei parametri a disposizione per settare la rete. Altri benefici collegati all'introduzione delle schede grafiche furono una democratizzazione della ricerca sull'AI. I costi derivati dall'attività di ricerca diminuirono, evitando l'utilizzo di cluster di CPU e molti più laboratori in giro per il mondo poterono contribuire all'avanzamento del settore. 
+Tale utilizzo di memoria costituisce un limite difficile per la computazione da parte delle CPU, anche quelle multi-core. Le CPU ottimizzano la velocità di calcolo sui singoli processi seriali e sono un'alternativa ad un altro tipo di architettura per processori: le GPU. Le GPU furono inventate a detta di Nvidia nel 1999 ma le loro origini risalgono a molti anni prima e datare un nascita per questa tecnologia è quasi impossibile visto che deriva dall'evoluzione di soluzioni tecnologiche affini per scopi che si sono succedute nel corso degli anni. Nel 2007 gli sviluppatori poterono sfruttare le potenzialità di calcolo parallelo anche per applicazioni più generiche grazie alla piattaforma di programmazione \textit{CUDA}. Nel 2009 un documento accademico di Stanford illustrava quanto più velocemente si potesse addestrare delle reti neurali utilizzando metodi con GPU, fino a 70 volte più veloci della controparte con CPU \cite{raina2009large}. Tale approccio consentì l'uso di dataset più ricchi e un aumento dei parametri a disposizione per settare la rete. 
 
-Ma perchè le GPU? Tanta più memoria si necessita per sviluppare i calcoli di queste matrici tanto più l'utilizzo delle GPU migliora le prestazione poiché queste ottimizzano i calcoli del processo su una banda più ampia verso la memoria, date le numerose unità di calcolo. A voler a fare un paragone i calcoli richiesti sono numerosi come i pacchi postali da scambiare fra due località che vengono messe in collegamento da un capiente ma lento camion e da una rapida automobile che però ha una ridotta capacità, nel momento in cui i pacchi diventano molti allora tanto maggiori sono i vantaggi di trasportali in unico viaggio, per quanto lento, con il camion \cite{quora:why_gpu}.
+Ma perchè le GPU? Tanta più memoria si necessita per sviluppare i calcoli di queste matrici tanto più l'utilizzo delle GPU migliora le prestazione perché consiste di numerose unità di calcolo semplici che possono agire in parallelo. A voler a fare un paragone i calcoli richiesti sono numerosi come i pacchi postali da scambiare fra due località che vengono messe in collegamento da un capiente ma lento camion e da una rapida automobile che però ha una ridotta capacità, nel momento in cui i pacchi diventano molti allora tanto maggiori sono i vantaggi di trasportali in unico viaggio, per quanto lento, con il camion \cite{quora:why_gpu}.
 \\
 Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali nello svolgere il medesimo compito, una implementata su GPU l'altra su CPU. L'esperimento consiste nel riconoscere cifre numeriche scritte a mano, presentate in un dataset chiamato \textit{MNIST}, come quelle in figura. Presentiamo i risultati delle velocità di computazione nella tabella e nel grafico riportato sotto, dai quali possiamo evidenziare come aver allenato la rete neurale attraverso la GPU aumenti di un fattore molto grande le performance rispetto alla controparte in CPU e che la GPU sia da preferire quando nella rete sono presenti un grande numero di attributi, altrimenti il costo dell'inizializzazione della scheda non verrebbe giustificato dall'incremento delle velocità \cite{brito2016gpu}.
 
 \begin{figure}[t]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/table_experiment.png}}
-\caption{Riassunto dei risultati dell'esperimento }
+\caption{Riassunto dei risultati dell'esperimento \cite{brito2016gpu}}
 \label{fig:subfig}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 {\includegraphics[scale=0.5]{media_tesi/graph_GPU_vs_CPU.png}}
-\caption{Il grafico che mostra le differenze tra le velocità di esecuzione tra CPU e GPU}
+\caption{Il grafico che mostra le differenze tra le velocità di esecuzione tra CPU e GPU \cite{brito2016gpu}}
 \label{fig:subfig}
 \end{figure}
 

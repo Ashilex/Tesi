@@ -4,6 +4,11 @@
 End-to-end deep learning platform.
 \newblock [Online; accessed 14-March-2019].
 
+\bibitem{aws-mxnet}
+Apache mxnet in aws.
+\newblock \url{https://aws.amazon.com/it/mxnet/}, 1999.
+\newblock Online; accessed 8 Marzo 2019.
+
 \bibitem{stanford_history}
 {History of neural networks}.
 \newblock
@@ -11,9 +16,18 @@ End-to-end deep learning platform.
   2010.
 \newblock Online; accessed 28 Febraury 2019.
 
+\bibitem{lamblin}
+\url{https://groups.google.com/forum/#!topic/theano-users/7Poq8BZutbY}, 2017.
+\newblock Online; accessed 18 Marzo 2019.
+
 \bibitem{maruti:mxnet}
 Top 8 deep learning frameworks, 2018.
 \newblock [Online; accessed 15-March-2019].
+
+\bibitem{keras}
+Keras: The python deep learning library.
+\newblock \url{https://keras.io/}, 2019.
+\newblock Online; accessed 18 Marzo 2019.
 
 \bibitem{brito2016gpu}
 Ricardo Brito, Simon Fong, Kyungeun Cho, Wei Song, Raymond Wong, Sabah
@@ -37,7 +51,12 @@ N.G. Carr.
 \bibitem{wiki:caffe2}
 Wikipedia contributors.
 \newblock Caffe (software), 2019.
-\newblock [Online; accessed 1-March-2019].
+\newblock [Online; accessed 1 Marzo 2019].
+
+\bibitem{elman1990finding}
+Jeffrey~L Elman.
+\newblock Finding structure in time.
+\newblock {\em Cognitive science}, 14(2):179--211, 1990.
 
 \bibitem{goodfellow2014generative}
 Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
@@ -101,11 +120,25 @@ Jean-Louis Queguiner.
   framework in front of tensorflow?', 2018.
 \newblock [Online; accessed 15-March-2019].
 
+\bibitem{raina2009large}
+Rajat Raina, Anand Madhavan, and Andrew~Y Ng.
+\newblock Large-scale deep unsupervised learning using graphics processors.
+\newblock In {\em Proceedings of the 26th annual international conference on
+  machine learning}, pages 873--880. ACM, 2009.
+
 \bibitem{saito1997partial}
 Kazumi Saito and Ryohei Nakano.
 \newblock Partial bfgs update and efficient step-length calculation for
   three-layer neural networks.
 \newblock {\em Neural Computation}, 9(1):123--141, 1997.
+
+\bibitem{rrn-medium}
+Amit Shekhar.
+\newblock Understanding the recurrent neural network.
+\newblock
+  \url{https://medium.com/mindorks/understanding-the-recurrent-neural-network-44d593f112a2},
+  2018.
+\newblock Online; accessed 18 Marzo 2019.
 
 \bibitem{caffe_announcement}
 The~Facebook team.
@@ -123,10 +156,16 @@ The~Facebook team.
 \newblock What is caffe2?, 2017.
 \newblock [Online; accessed 14-March-2019].
 
+\bibitem{2016arXiv160502688short}
+{Theano Development Team}.
+\newblock {Theano: A {Python} framework for fast computation of mathematical
+  expressions}.
+\newblock {\em arXiv e-prints}, abs/1605.02688, May 2016.
+
 \bibitem{quora:why_gpu}
 {Tim Dettmers}.
 \newblock Answer to why gpu are well suited for deep learning?, 2016.
-\newblock [Online; accessed 10-March-2019].
+\newblock [Online; accessed 10 Marzo 2019].
 
 \bibitem{TSD}
 Subarna Tripathi, Gokce Dane, Byeongkeun Kang, Vasudev Bhaskaran, and Truong
@@ -148,10 +187,15 @@ Bernard Widrow and Marcian~E Hoff.
 \newblock Adaptive switching circuits.
 \newblock Technical report, STANFORD UNIV CA STANFORD ELECTRONICS LABS, 1960.
 
+\bibitem{wiki:tf}
+Wikipedia.
+\newblock Tensorflow --- wikipedia{,} l'enciclopedia libera, 2018.
+\newblock [Online; in data 14-marzo-2019].
+
 \bibitem{wiki:tipi}
 {Wikipedia contributors}.
 \newblock Types of artificial neural networks --- {Wikipedia}{,} the free
   encyclopedia, 2019.
-\newblock [Online; accessed 1-March-2019].
+\newblock [Online; accessed 1 Marzo 2019].
 
 \end{thebibliography}

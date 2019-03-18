@@ -3,50 +3,52 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: bib_ale.bib
-Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in stanford_history
+Warning--to sort, need author or key in keras
 Warning--to sort, need author or key in pytorch:docs
 Warning--to sort, need author or key in maruti:mxnet
+Warning--to sort, need author or key in aws-mxnet
+Warning--to sort, need author or key in lamblin
 Warning--empty journal in TSD
-You've used 27 entries,
+You've used 35 entries,
             2118 wiz_defined-function locations,
-            631 strings with 7505 characters,
-and the built_in function-call counts, 7140 in all, are:
-= -- 681
-> -- 304
-< -- 1
-+ -- 131
-- -- 98
-* -- 395
-:= -- 1180
-add.period$ -- 80
-call.type$ -- 27
-change.case$ -- 128
+            671 strings with 8530 characters,
+and the built_in function-call counts, 9072 in all, are:
+= -- 881
+> -- 353
+< -- 2
++ -- 153
+- -- 112
+* -- 488
+:= -- 1467
+add.period$ -- 105
+call.type$ -- 35
+change.case$ -- 158
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 251
-empty$ -- 637
-format.name$ -- 98
-if$ -- 1504
+cite$ -- 42
+duplicate$ -- 330
+empty$ -- 835
+format.name$ -- 112
+if$ -- 1943
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 14
-newline$ -- 137
-num.names$ -- 48
-pop$ -- 207
+int.to.str$ -- 35
+missing$ -- 17
+newline$ -- 177
+num.names$ -- 58
+pop$ -- 262
 preamble$ -- 1
-purify$ -- 102
+purify$ -- 125
 quote$ -- 0
-skip$ -- 198
+skip$ -- 263
 stack$ -- 0
-substring$ -- 349
-swap$ -- 36
-text.length$ -- 1
+substring$ -- 446
+swap$ -- 54
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
-warning$ -- 4
-while$ -- 63
-width$ -- 29
-write$ -- 276
-(There were 5 warnings)
+type$ -- 134
+warning$ -- 7
+while$ -- 78
+width$ -- 37
+write$ -- 360
+(There were 7 warnings)
