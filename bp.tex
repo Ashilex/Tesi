@@ -103,6 +103,7 @@ Venendo alle variazioni su questo metodo; furono proposti il \textit{metodo dei 
 Più genericamente il problema del migliorare l'ottimizzazione dell'errore trova soluzione quando si migliora la capacità di computare la più utile lunghezza di passo possibile (step-lenght) ovvero quanto distante una iterazione deve essere da quella che la precede avendo seguito la direzione del gradiente.
 Esistono per questo algoritmi del secondo ordine e del primo ordine, che possiamo vedere a confronto nelle due immagini in \ref{discese}.
 
+\vspace{5 mm}
 
 \begin{figure}[hbtb]
 \centering
@@ -113,7 +114,7 @@ Esistono per questo algoritmi del secondo ordine e del primo ordine, che possiam
 \caption{Confronto tra tipologie diverse di algoritmi}
 \label{discese}
 \end{figure}
-
+\vspace{5 mm}
 
 Si può vedere come l'andamento della traiettoria conduca al minimo in numero inferiori di passi utilizzando algoritmi del secondo ordine.
 
@@ -132,7 +133,9 @@ Ma perchè le GPU? Tanta più memoria si necessita per sviluppare i calcoli di q
 \\
 Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali nello svolgere il medesimo compito, una implementata su GPU l'altra su CPU. L'esperimento consiste nel riconoscere cifre numeriche scritte a mano, presentate in un dataset chiamato \textit{MNIST}, come quelle in figura. Presentiamo i risultati delle velocità di computazione nella tabella e nel grafico riportato sotto, dai quali possiamo evidenziare come aver allenato la rete neurale attraverso la GPU aumenti di un fattore molto grande le performance rispetto alla controparte in CPU e che la GPU sia da preferire quando nella rete sono presenti un grande numero di attributi, altrimenti il costo dell'inizializzazione della scheda non verrebbe giustificato dall'incremento delle velocità \cite{brito2016gpu}.
 
-\begin{figure}[t]
+\vspace{15mm}
+
+\begin{figure}[h]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/table_experiment.png}}
 \caption{Riassunto dei risultati dell'esperimento \cite{brito2016gpu}}

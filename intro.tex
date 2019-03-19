@@ -1,4 +1,4 @@
-.... le reti neurali sono una tecnica di ml ma non sono l'unica esistente anche se al momento stanno avendo ampio successo.
+ Le reti neurali sono una tecnica di \emph{machine learning} ma non sono l'unica esistente anche se al momento stanno avendo ampio successo. In questa relazione vedremo come sono nate, da cosa hanno tratto ispirazione e avremo una rapida scorsa su alcune delle tipologie più popolari. Analizzeremo più nello specifico come avviene l'apprendimento da parte delle reti e come siano state migliorate nel corso del tempo. Infine prenderemo in analisi vantaggi e svantaggi dei principali framework che le implementano.
 
 \section{L'ispirazione biologica}
 %\vspace{-2cm}
@@ -7,13 +7,16 @@ Ogni neurone riceve degli stimoli elettrochimici dai neuroni circostanti attrave
 Per quel che vedremo in seguito è importante sottolineare come il neurone attivi il segnale in uscita solo se la totalità dei segnali in ingresso raggiunge un certo livello, a quel punto il neurone propaga il proprio impulso, senza sfumature di attivazione, o il segnale in uscita viene propagato o non viene propagato, non esistono segnali di potenza variabile da distribuire verso i neuroni connessi.
 Il nostro intero cervello è quindi composto interamente da questa fitta rete di cellule, i neuroni, che comunicano fra loro attraverso segnali elettrochimici. \`E sorprendente vedere come la struttura alla base molto semplice, costituita da una cellula che a seconda della somma dei segnali in ingresso si attiva, o meno, comunicando con altre cellule attraverso segnali in uscita, riesca nel suo complesso reticolo di interazioni a svolgere funzioni complicate come quelle del cervello nella sua totalità.
 Lo studio del cervello e la sua comprensione ha potuto ispirare i modelli scientifici e matematici che danno vita a quelle che sono dette \textit{reti neurali artificiali (in inglese \textit{Artificial Neural Networks}, ANN)}.
+\vspace{2 cm}
 
-\begin{figure}[t]
+\begin{figure}[h]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/real_neuron.png}}
 \caption{An impression of a real neuron. This image is a light microscope photograph by John Anderson, Institute for Neuroinformatics, Zurich, Switzerland.}
 \label{fig:subfig}
 \end{figure}
+
+\vspace{1.5 cm}
 
 \begin{figure}[h]
 \centering
@@ -72,7 +75,7 @@ Il perceptrone può essere visto come modello di un neurone biologico e può app
 {\includegraphics[scale=1.3]{media_tesi/feed_forward.png}} \quad
 \subfloat[][\emph{una DFF}]
 {\includegraphics[scale=0.8]{media_tesi/DFF.png}}\\
-\caption{Confronto tra tipologie diverse di algoritmi}
+
 \label{fig:subfig}
 \end{figure}
 
@@ -95,3 +98,13 @@ Un recente sviluppo, del 2014, delle reti che sembra essere promettente è la co
 Abbiamo parlato fin'ora solamente di reti in cui i segnali partendo da uno strato di input si propagano unidirezionalmente verso la fine della rete. E' giusto annoverare brevemente anche quelle reti che invece formano dei cammini ciclici fra i loro nodi.
 
 Le \emph{Recurrent Neural Networks (RNN)} sono delle reti feed-forward in cui il flusso di dati non procede soltanto in una direzione ma i valori di uscita in un livello posson essere usati come input per uno strato ad esso inferiore \cite{elman1990finding}. Questa interconnessione permette alla rete di conservare le informazioni in una memoria di stato. Questo le rende appetibili in quelle applicazioni dove la sequenza temporale in cui dei dati vengono registrati è importante: ad esempio l'analisi predittiva dei prezzi di borsa, la previsione della prossima parola inserita in un editor di testo o il riconoscimento vocale \cite{rrn-medium}.
+
+\begin{figure}[hbtb]
+\centering
+\subfloat[][\emph{una GAN}]
+{\includegraphics[scale=0.7]{media_tesi/GAN.png}} \quad
+\subfloat[][\emph{una RNN}]
+{\includegraphics[scale=0.4]{media_tesi/RNN.png}}\\
+
+\label{fig:subfig}
+\end{figure}

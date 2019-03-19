@@ -2,6 +2,7 @@
 
 \bibitem{pytorch:docs}
 End-to-end deep learning platform.
+\newblock \url{https://pytorch.org/features}.
 \newblock [Online; accessed 14-March-2019].
 
 \bibitem{aws-mxnet}
@@ -21,7 +22,9 @@ Apache mxnet in aws.
 \newblock Online; accessed 18 Marzo 2019.
 
 \bibitem{maruti:mxnet}
-Top 8 deep learning frameworks, 2018.
+Top 8 deep learning frameworks.
+\newblock \url{https://www.marutitech.com/top-8-deep-learning-frameworks/},
+  2018.
 \newblock [Online; accessed 15-March-2019].
 
 \bibitem{keras}
@@ -50,13 +53,19 @@ N.G. Carr.
 
 \bibitem{wiki:caffe2}
 Wikipedia contributors.
-\newblock Caffe (software), 2019.
+\newblock Caffe (software).
+\newblock \url{https://en.wikipedia.org/wiki/Caffe_(software)}, 2019.
 \newblock [Online; accessed 1 Marzo 2019].
 
 \bibitem{elman1990finding}
 Jeffrey~L Elman.
 \newblock Finding structure in time.
 \newblock {\em Cognitive science}, 14(2):179--211, 1990.
+
+\bibitem{gao2014machine}
+Jim Gao.
+\newblock Machine learning applications for data center optimization.
+\newblock 2014.
 
 \bibitem{goodfellow2014generative}
 Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
@@ -68,7 +77,10 @@ Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
 \bibitem{quora:relu}
 Prasoon Goyal.
 \newblock An answer to the question 'why is relu the most common activation
-  function used in neural networks?', 2018.
+  function used in neural networks?'.
+\newblock
+  \url{https://www.quora.com/Why-is-ReLU-the-most-common-activation-function-used-in-neural-networks},
+  2018.
 \newblock [Online; accessed 14-March-2019].
 
 \bibitem{hebb1961organization}
@@ -86,6 +98,7 @@ John~J Hopfield.
 \bibitem{cs23}
 Andrej Karpathy.
 \newblock Biological motivation and connections.
+\newblock \url{http://cs231n.github.io/neural-networks-1/#bio}.
 \newblock [Online; accessed 15-March-2019].
 
 \bibitem{kohonen1972correlation}
@@ -101,7 +114,10 @@ Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, Patrick Haffner, et~al.
 \bibitem{oreilly:pytorch_intro}
 Ben Lorica.
 \newblock Why ai and machine learning researchers are beginning to embrace
-  pytorch, 2017.
+  pytorch.
+\newblock
+  \url{https://www.oreilly.com/ideas/why-ai-and-machine-learning-researchers-are-beginning-to-embrace-pytorch},
+  2017.
 \newblock [Online; accessed 13-March-2019].
 
 \bibitem{mcculloch1943logical}
@@ -117,7 +133,10 @@ Michael~A. Nielsen.
 \bibitem{quora:mxnet}
 Jean-Louis Queguiner.
 \newblock An answer to the question 'how is mxnet still surviving as a
-  framework in front of tensorflow?', 2018.
+  framework in front of tensorflow?'.
+\newblock
+  \url{https://www.quora.com/How-is-MxNET-still-surviving-as-a-framework-in-front-of-Tensorflow},
+  2018.
 \newblock [Online; accessed 15-March-2019].
 
 \bibitem{raina2009large}
@@ -143,17 +162,22 @@ Amit Shekhar.
 \bibitem{caffe_announcement}
 The~Facebook team.
 \newblock Caffe2 open source brings cross platform machine learning tools to
-  developers, 2017.
+  developers.
+\newblock
+  \url{https://caffe2.ai/blog/2017/04/18/caffe2-open-source-announcement.html},
+  2017.
 \newblock [Online; accessed 14-March-2019].
 
 \bibitem{caffe_c++}
 The~Facebook team.
-\newblock Caffe2 with c++, 2017.
+\newblock Caffe2 with c++.
+\newblock \url{https://caffe2.ai/docs/cplusplus_tutorial.html}, 2017.
 \newblock [Online; accessed 14-March-2019].
 
 \bibitem{caffe_intro}
 The~Facebook team.
-\newblock What is caffe2?, 2017.
+\newblock What is caffe2?
+\newblock \url{https://caffe2.ai/docs/caffe-migration.html}, 2017.
 \newblock [Online; accessed 14-March-2019].
 
 \bibitem{2016arXiv160502688short}
@@ -164,7 +188,9 @@ The~Facebook team.
 
 \bibitem{quora:why_gpu}
 {Tim Dettmers}.
-\newblock Answer to why gpu are well suited for deep learning?, 2016.
+\newblock Answer to why gpu are well suited for deep learning?
+\newblock
+  \url{https://www.quora.com/Why-are-GPUs-well-suited-to-deep-learning}, 2016.
 \newblock [Online; accessed 10 Marzo 2019].
 
 \bibitem{TSD}
@@ -189,13 +215,19 @@ Bernard Widrow and Marcian~E Hoff.
 
 \bibitem{wiki:tf}
 Wikipedia.
-\newblock Tensorflow --- wikipedia{,} l'enciclopedia libera, 2018.
+\newblock Tensorflow --- wikipedia{,} l'enciclopedia libera.
+\newblock
+  \url{http://it.wikipedia.org/w/index.php?title=TensorFlow&oldid=101735405},
+  2018.
 \newblock [Online; in data 14-marzo-2019].
 
 \bibitem{wiki:tipi}
 {Wikipedia contributors}.
 \newblock Types of artificial neural networks --- {Wikipedia}{,} the free
-  encyclopedia, 2019.
+  encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Types_of_artificial_neural_networks&oldid=885109562},
+  2019.
 \newblock [Online; accessed 1 Marzo 2019].
 
 \end{thebibliography}
