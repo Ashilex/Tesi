@@ -11,45 +11,45 @@ Warning--to sort, need author or key in aws-mxnet
 Warning--to sort, need author or key in lamblin
 Warning--empty journal in gao2014machine
 Warning--empty journal in TSD
-You've used 38 entries,
+You've used 39 entries,
             2118 wiz_defined-function locations,
-            698 strings with 9754 characters,
-and the built_in function-call counts, 10364 in all, are:
-= -- 1032
-> -- 413
+            704 strings with 9999 characters,
+and the built_in function-call counts, 10581 in all, are:
+= -- 1054
+> -- 420
 < -- 3
-+ -- 176
-- -- 132
-* -- 572
-:= -- 1695
-add.period$ -- 125
-call.type$ -- 38
-change.case$ -- 177
++ -- 179
+- -- 134
+* -- 578
+:= -- 1732
+add.period$ -- 129
+call.type$ -- 39
+change.case$ -- 181
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 382
-empty$ -- 914
-format.name$ -- 132
-if$ -- 2220
+cite$ -- 47
+duplicate$ -- 389
+empty$ -- 936
+format.name$ -- 134
+if$ -- 2268
 int.to.chr$ -- 0
-int.to.str$ -- 38
+int.to.str$ -- 39
 missing$ -- 22
-newline$ -- 203
-num.names$ -- 64
-pop$ -- 266
+newline$ -- 209
+num.names$ -- 66
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 144
 quote$ -- 0
-skip$ -- 287
+skip$ -- 293
 stack$ -- 0
-substring$ -- 520
-swap$ -- 67
+substring$ -- 525
+swap$ -- 68
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 148
 warning$ -- 8
-while$ -- 89
-width$ -- 40
-write$ -- 414
+while$ -- 91
+width$ -- 41
+write$ -- 426
 (There were 8 warnings)

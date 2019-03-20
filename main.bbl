@@ -3,34 +3,34 @@
 \bibitem{pytorch:docs}
 End-to-end deep learning platform.
 \newblock \url{https://pytorch.org/features}.
-\newblock [Online; accessed 14-March-2019].
+\newblock [Online; visitato il: 14 Marzo 2019].
 
 \bibitem{aws-mxnet}
 Apache mxnet in aws.
 \newblock \url{https://aws.amazon.com/it/mxnet/}, 1999.
-\newblock Online; accessed 8 Marzo 2019.
+\newblock [ Online; visitato il: 8 Marzo 2019].
 
 \bibitem{stanford_history}
 {History of neural networks}.
 \newblock
   \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/index.html},
   2010.
-\newblock Online; accessed 28 Febraury 2019.
+\newblock [ Online; visitato il: 28 Febbraio 2019].
 
 \bibitem{lamblin}
 \url{https://groups.google.com/forum/#!topic/theano-users/7Poq8BZutbY}, 2017.
-\newblock Online; accessed 18 Marzo 2019.
+\newblock [Online; visitato il: 18 Marzo 2019].
 
 \bibitem{maruti:mxnet}
 Top 8 deep learning frameworks.
 \newblock \url{https://www.marutitech.com/top-8-deep-learning-frameworks/},
   2018.
-\newblock [Online; accessed 15-March-2019].
+\newblock [Online; visitato il: 15 Marzo 2019].
 
 \bibitem{keras}
 Keras: The python deep learning library.
 \newblock \url{https://keras.io/}, 2019.
-\newblock Online; accessed 18 Marzo 2019.
+\newblock [Online; visitato il: 18 Marzo 2019].
 
 \bibitem{brito2016gpu}
 Ricardo Brito, Simon Fong, Kyungeun Cho, Wei Song, Raymond Wong, Sabah
@@ -55,7 +55,7 @@ N.G. Carr.
 Wikipedia contributors.
 \newblock Caffe (software).
 \newblock \url{https://en.wikipedia.org/wiki/Caffe_(software)}, 2019.
-\newblock [Online; accessed 1 Marzo 2019].
+\newblock [ Online; visitato il: 1 Marzo 2019].
 
 \bibitem{elman1990finding}
 Jeffrey~L Elman.
@@ -90,7 +90,7 @@ John~J Hopfield.
 Andrej Karpathy.
 \newblock Biological motivation and connections.
 \newblock \url{http://cs231n.github.io/neural-networks-1/#bio}.
-\newblock [Online; accessed 15-March-2019].
+\newblock [Online; visitato il: 15 Marzo 2019].
 
 \bibitem{kohonen1972correlation}
 Teuvo Kohonen.
@@ -115,7 +115,7 @@ Ben Lorica.
 \newblock
   \url{https://www.oreilly.com/ideas/why-ai-and-machine-learning-researchers-are-beginning-to-embrace-pytorch},
   2017.
-\newblock [Online; accessed 13-March-2019].
+\newblock [Online; visitato il: 13 Marzo 2019].
 
 \bibitem{mcculloch1943logical}
 Warren~S McCulloch and Walter Pitts.
@@ -139,7 +139,7 @@ Jean-Louis Queguiner.
 \newblock
   \url{https://www.quora.com/How-is-MxNET-still-surviving-as-a-framework-in-front-of-Tensorflow},
   2018.
-\newblock [Online; accessed 15-March-2019].
+\newblock [Online; visitato il: 15 Marzo 2019].
 
 \bibitem{raina2009large}
 Rajat Raina, Anand Madhavan, and Andrew~Y Ng.
@@ -170,7 +170,15 @@ Amit Shekhar.
 \newblock
   \url{https://medium.com/mindorks/understanding-the-recurrent-neural-network-44d593f112a2},
   2018.
-\newblock Online; accessed 18 Marzo 2019.
+\newblock [ Online; visitato il: 18 Marzo 2019].
+
+\bibitem{mit-ai}
+James Somers.
+\newblock Is ai riding a one-trick pony?
+\newblock
+  \url{https://www.technologyreview.com/s/608911/is-ai-riding-a-one-trick-pony/},
+  2017.
+\newblock [Online; visitato il: 20 Marzo 2019].
 
 \bibitem{caffe_announcement}
 The~Facebook team.
@@ -179,19 +187,19 @@ The~Facebook team.
 \newblock
   \url{https://caffe2.ai/blog/2017/04/18/caffe2-open-source-announcement.html},
   2017.
-\newblock [Online; accessed 14-March-2019].
+\newblock [Online; visitato il: 14 Marzo 2019].
 
 \bibitem{caffe_c++}
 The~Facebook team.
 \newblock Caffe2 with c++.
 \newblock \url{https://caffe2.ai/docs/cplusplus_tutorial.html}, 2017.
-\newblock [Online; accessed 14-March-2019].
+\newblock [Online; visitato il: 14 Marzo 2019].
 
 \bibitem{caffe_intro}
 The~Facebook team.
 \newblock What is caffe2?
 \newblock \url{https://caffe2.ai/docs/caffe-migration.html}, 2017.
-\newblock [Online; accessed 14-March-2019].
+\newblock [Online; visitato il: 14 Marzo 2019].
 
 \bibitem{2016arXiv160502688short}
 {Theano Development Team}.
@@ -212,7 +220,7 @@ Fjodor van Veen.
 \newblock
   \url{https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/index.html},
   2016.
-\newblock Online; accessed 17 Marzo 2019.
+\newblock [ Online; visitato il: 17 Marzo 2019].
 
 \bibitem{widrow1960adaptive}
 Bernard Widrow and Marcian~E Hoff.
@@ -234,6 +242,6 @@ Wikipedia.
 \newblock
   \url{https://en.wikipedia.org/w/index.php?title=Types_of_artificial_neural_networks&oldid=885109562},
   2019.
-\newblock [Online; accessed 1 Marzo 2019].
+\newblock [ Online; visitato il: 1 Marzo 2019].
 
 \end{thebibliography}
