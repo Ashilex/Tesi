@@ -74,19 +74,10 @@ Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
 \newblock In {\em Advances in neural information processing systems}, pages
   2672--2680, 2014.
 
-\bibitem{quora:relu}
-Prasoon Goyal.
-\newblock An answer to the question 'why is relu the most common activation
-  function used in neural networks?'.
-\newblock
-  \url{https://www.quora.com/Why-is-ReLU-the-most-common-activation-function-used-in-neural-networks},
-  2018.
-\newblock [Online; accessed 14-March-2019].
-
 \bibitem{hebb1961organization}
 Donald~O Hebb.
 \newblock {\em The organization of behavior}.
-\newblock na, 1961.
+\newblock Wiley, 1961.
 
 \bibitem{hopfield1982neural}
 John~J Hopfield.
@@ -105,6 +96,12 @@ Andrej Karpathy.
 Teuvo Kohonen.
 \newblock Correlation matrix memories.
 \newblock {\em IEEE transactions on computers}, 100(4):353--359, 1972.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105, 2012.
 
 \bibitem{lecun1998gradient}
 Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, Patrick Haffner, et~al.
@@ -125,6 +122,11 @@ Warren~S McCulloch and Walter Pitts.
 \newblock A logical calculus of the ideas immanent in nervous activity.
 \newblock {\em The bulletin of mathematical biophysics}, 5(4):115--133, 1943.
 
+\bibitem{minsky2017perceptrons}
+Marvin Minsky and Seymour~A Papert.
+\newblock {\em Perceptrons: An introduction to computational geometry}.
+\newblock MIT press, 2017.
+
 \bibitem{nielsen_book}
 Michael~A. Nielsen.
 \newblock {\em Neural Networks and Deep Learning}.
@@ -144,6 +146,17 @@ Rajat Raina, Anand Madhavan, and Andrew~Y Ng.
 \newblock Large-scale deep unsupervised learning using graphics processors.
 \newblock In {\em Proceedings of the 26th annual international conference on
   machine learning}, pages 873--880. ACM, 2009.
+
+\bibitem{reilly1982neural}
+Douglas~L Reilly, Leon~N Cooper, and Charles Elbaum.
+\newblock A neural model for category learning.
+\newblock {\em Biological cybernetics}, 45(1):35--41, 1982.
+
+\bibitem{rumelhart1985learning}
+David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
+\newblock Learning internal representations by error propagation.
+\newblock Technical report, California Univ San Diego La Jolla Inst for
+  Cognitive Science, 1985.
 
 \bibitem{saito1997partial}
 Kazumi Saito and Ryohei Nakano.
@@ -185,13 +198,6 @@ The~Facebook team.
 \newblock {Theano: A {Python} framework for fast computation of mathematical
   expressions}.
 \newblock {\em arXiv e-prints}, abs/1605.02688, May 2016.
-
-\bibitem{quora:why_gpu}
-{Tim Dettmers}.
-\newblock Answer to why gpu are well suited for deep learning?
-\newblock
-  \url{https://www.quora.com/Why-are-GPUs-well-suited-to-deep-learning}, 2016.
-\newblock [Online; accessed 10 Marzo 2019].
 
 \bibitem{TSD}
 Subarna Tripathi, Gokce Dane, Byeongkeun Kang, Vasudev Bhaskaran, and Truong
