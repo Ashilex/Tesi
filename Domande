@@ -1,1 +1,12 @@
- 
+
+https://www.technologyreview.com/s/608911/is-ai-riding-a-one-trick-pony/
+
+"A 2012 paper by Hinton and two of his Toronto students showed that deep neural nets, trained using backpropagation, beat state-of-the-art systems in image recognition. “Deep learning” took off. To the outside world, AI seemed to wake up overnight. For Hinton, it was a payoff long overdue."
+
+QUALE ERA PRIMA DELLE RETI NEURALI IL SISTEMA PER IL RICONOSCIMENTO DELLE IMMAGINI?
+
+È REALMENTE DAL 2012 CHE BP È DIVENTATO COSÌ POPOLARE?
+
+edges, like corners; the layer above that one might start to see shapes; and the layer above that one might start finding stuff like “open bun” or “closed bun,” in the sense of having neurons that respond to either case. The net organizes itself, in other words, into hierarchical layers without ever having been explicitly programmed that way.
+
+ACCADE REALMENTE COSÌ ?
