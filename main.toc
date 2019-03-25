@@ -2,16 +2,16 @@
 \select@language {italian}
 \contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}L'ispirazione biologica}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}I diversi tipi rete neurale}{5}{section.1.2}
-\contentsline {chapter}{\numberline {2}L'algoritmo di Backpropagation }{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}L'idea dell'apprendimento}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}La matematica dietro a backpropagation}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}I miglioramenti}{14}{section.2.3}
-\contentsline {chapter}{\numberline {3}I framework per le reti neurali}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Una panoramica}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}TensorFlow}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}PyTorch}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Caffe2}{21}{section.3.4}
-\contentsline {section}{\numberline {3.5}Mxnet}{21}{section.3.5}
-\contentsline {section}{\numberline {3.6}Theano}{22}{section.3.6}
-\contentsline {chapter}{\numberline {4}Conclusioni}{23}{chapter.4}
+\contentsline {section}{\numberline {1.2}I diversi tipi rete neurale}{6}{section.1.2}
+\contentsline {chapter}{\numberline {2}L'algoritmo di Backpropagation }{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}L'idea dell'apprendimento}{10}{section.2.1}
+\contentsline {section}{\numberline {2.2}La matematica dietro a backpropagation}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}I miglioramenti}{17}{section.2.3}
+\contentsline {chapter}{\numberline {3}I framework per le reti neurali}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}Una panoramica}{22}{section.3.1}
+\contentsline {section}{\numberline {3.2}TensorFlow}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}PyTorch}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Caffe2}{24}{section.3.4}
+\contentsline {section}{\numberline {3.5}Mxnet}{24}{section.3.5}
+\contentsline {section}{\numberline {3.6}Theano}{25}{section.3.6}
+\contentsline {chapter}{\numberline {4}Conclusioni}{27}{chapter.4}

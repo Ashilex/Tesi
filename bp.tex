@@ -43,10 +43,11 @@ Ora che abbiamo spiegato come funziona il gradiente dobbiamo andare più a fondo
 Ogni neurone $j^{th}$ è collegato (stiamo sempre parlando del caso delle reti feed forward) ai neuroni dello strato precedente dall'arco di peso $w^{l}_{jk}$ (cioè dal neurone $k$ in $l-1$ al neurone $j$ in $l$) e la sua attivazione viene determinata da una computazione fatta sui segnali in ingresso, più precisamente è la somma delle attivazioni dei neuroni dello stato precedente a lui collegati, moltiplicati per il peso del loro arco verso $j^{th}$ più una quantità $b_{j}$ specifica del neurone $j$ nello strato $l$, questa somma prende il nome di $z^{l}_{j}$. 
 
 \begin{equation}
-\displaystyle a^{l}_{j}=\sigma\left( z^{l}_{j}\right) = \sigma \left( \sum_{k}w^{l}_{jk}a^{l-1}_k +b^{l}_{j} \right)
+	\displaystyle a^{l}_{j}=\sigma\left( z^{l}_{j}\right) = \sigma \left( \sum_{k}w^{l}_{jk}a^{l-1}_k +b^{l}_{j} \right)
+	\label{2.4}
 \end{equation}
 
-Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati precedenti e internamente deve decidere se propagare a sua volta lo stimolo o meno. In biologia abbiamo già anticipato che i neuroni, una volta eccitati, non hanno una via di mezzo nel rispondere al segnale, per cui, o propagano a loro volta lo stimolo nella rete ``accendendosi''  oppure rimangono in quiete senza reagire. Nelle reti neurali la funzione di attivazione di solito non emette un segnale binario, piuttosto propaga vari livelli d'intensità del segnale. $\sigma$ rappresenta quella classe di funzioni sigmoidali che ben si adattano a rappresentare l'attivazione dei neuroni e che hanno lo scopo di normalizzare gli output nel range da $0$ a $1$. Quindi, se un neurone reale può veder rappresentata la propria funzione di attivazione come una funzione a gradino una sigmoide è la versione addolcita della funzione gradino, come mostriamo qui sotto con il plot della funzione sigmoide:
+Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati precedenti e internamente deve decidere se propagare a sua volta lo stimolo o meno. In biologia abbiamo già anticipato che i neuroni, una volta eccitati, non hanno una via di mezzo nel rispondere al segnale, per cui, o propagano a loro volta lo stimolo nella rete ``accendendosi''  oppure rimangono in quiete senza reagire. Nelle reti neurali la funzione di attivazione di solito non emette un segnale binario, piuttosto propaga vari livelli d'intensità del segnale. $\sigma$ rappresenta quella classe di funzioni sigmoidali che ben si adattano a rappresentare l'attivazione dei neuroni e che hanno lo scopo di normalizzare gli output nel range da $0$ a $1$. Quindi, se un neurone reale può veder rappresentata la propria funzione di attivazione come una funzione a gradino una sigmoide è la versione addolcita della funzione gradino, come mostriamo di seguito con il plot della funzione sigmoide, figura \ref{sigmo}.
 \begin{equation}
 	\sigma(z)=\dfrac{1}{1+e^{-z}}
 \end{equation}
@@ -65,12 +66,13 @@ Spieghiamo brevemente cosa è $\sigma$. Ogni neurone riceve input dagli strati p
 \subfloat[][\emph{Grafico ReLu}]
 {\includegraphics[width=.41\textwidth]{media_tesi/relu.png}} \\
 \caption{Confronto tra due funzioni di attivazione}
-\label{fig:subfig}
+\label{sigmo}
 \end{figure}
+\vspace{0.8cm}
 
 La sigmoide non è l'unica funzione adatta per le reti neurali. Si usa anche $tanh$ oppure, un altra funzione è la \textit{ReLu}(Rectified Linear Unit)  $\displaystyle f(z)=max(0,z)$ che venne resa popolare quando la \textit{AlexNet} vinse la sfida \textit{ImageNet}nel 2012, un concorso che premia i migliori algoritmi per l'\textit{object detection} e la classificazione delle immagini. La \textit{AlexNet} usava \textit{ReLu} come funzione di attivazione e da quel momento in poi altri la adottarono ai propri scopi rendendosi conto, in via empirica, che funzionava meglio di quanto usato fino a quel momento \cite{krizhevsky2012imagenet}. Non è perfettamente chiaro cosa la renda migliore ma si pensa che la convergenza del metodo del gradiente venga velocizzata da \textit{ReLu} grazie alla sua semplicità e alla sua capacità di non saturarsi\cite{cs23}.
 
-L'output di un neurone è denotato da $ a^{l}_{j} $ per ogni neurone $j$ nello strato $l$, possiamo definire un vettore contenente questi output per tutti gli $n$ neuroni di quello strato $a^{l} = \left[a^{l}_{1},a^{l}_{2}, \cdots, a^{l}_{j}, \cdots, a^{l}_{n}  \right] $. Vediamo ora come di strato in strato i neuroni si attivano fra loro e per questo adottiamo una notazione matriciale di quanto abbiamo appena visto: denotiamo allora una matrice $w^{l}$ dei pesi per ogni layer della rete, dove le sue entry sono $w^{l}_{kj}$ i vari pesi che legano i neuroni fra lo strato $l-1$ ed $l$ e denotiamo, allo stesso modo di $a^{l}$ anche il vettore dei \textit{bias} $b^{l}$ per il livello $l$ e riscriviamo la formula 3 come:
+L'output di un neurone è denotato da $ a^{l}_{j} $ per ogni neurone $j$ nello strato $l$, possiamo definire un vettore contenente questi output per tutti gli $n$ neuroni di quello strato $a^{l} = \left[a^{l}_{1},a^{l}_{2}, \cdots, a^{l}_{j}, \cdots, a^{l}_{n}  \right] $. Vediamo ora come di strato in strato i neuroni si attivano fra loro e per questo adottiamo una notazione matriciale di quanto abbiamo appena visto: denotiamo allora una matrice $w^{l}$ dei pesi per ogni layer della rete, dove le sue entry sono $w^{l}_{kj}$ i vari pesi che legano i neuroni fra lo strato $l-1$ ed $l$ e denotiamo, allo stesso modo di $a^{l}$ anche il vettore dei \textit{bias} $b^{l}$ per il livello $l$ e riscriviamo la formula \ref{2.4} come:
 \begin{equation}
 	a^{l}=\sigma\left( w^{l}a^{l-1}+b^{l}\right)
 \end{equation}
@@ -138,6 +140,7 @@ Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali
 \begin{figure}[h]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/table_experiment.png}}
+\vspace{0.2cm}
 \caption{Riassunto dei risultati dell'esperimento \cite{brito2016gpu}}
 \label{fig:subfig}
 \end{figure}
@@ -145,6 +148,7 @@ Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali
 \begin{figure}[h]
 \centering
 {\includegraphics[scale=0.5]{media_tesi/graph_GPU_vs_CPU.png}}
+\vspace{0.4cm}
 \caption{Il grafico che mostra le differenze tra le velocità di esecuzione tra CPU e GPU \cite{brito2016gpu}}
 \label{fig:subfig}
 \end{figure}
@@ -152,16 +156,8 @@ Un esperimento presentato da alcuni studiosi nel 2016 comparava due reti neurali
 \begin{figure}[b]
 \centering
 {\includegraphics[scale=0.5]{media_tesi/MNIST.png}}
+\vspace{0.5cm}
 \caption{Un esempio di cifre da riconoscere da parte della reti nell'esperimento}
 \label{MNIST}
 \end{figure}
 
-%\begin{figure}[hbtb]
-%\centering
-%\subfloat[][\emph{Traiettorie algoritmi del primo ordine}]
-%{\includegraphics[width=.45\textwidth]{media_tesi/}} \quad
-%\subfloat[][\emph{Traiettorie algoritmi del secondo ordine}]
-%{\includegraphics[width=.45\textwidth]{media_tesi/learning_trajectories_of_first_order.jpeg}} \\
-%\caption{Confronto tra tipologie diverse di algoritmi}
-%\label{fig:subfig}
-%\end{figure}

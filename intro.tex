@@ -8,16 +8,17 @@ Ogni neurone riceve degli stimoli elettrochimici dai neuroni circostanti attrave
 Per quel che vedremo in seguito è importante sottolineare come il neurone attivi il segnale in uscita solo se la totalità dei segnali in ingresso raggiunge un certo livello, a quel punto il neurone propaga il proprio impulso, senza sfumature di attivazione, o il segnale in uscita viene propagato o non viene propagato, non esistono segnali di potenza variabile da distribuire verso i neuroni connessi.
 Il nostro intero cervello è quindi composto interamente da questa fitta rete di cellule, i neuroni, che comunicano fra loro attraverso segnali elettrochimici. \`E sorprendente vedere come la struttura alla base molto semplice, costituita da una cellula che a seconda della somma dei segnali in ingresso si attiva, o meno, comunicando con altre cellule attraverso segnali in uscita, riesca nel suo complesso reticolo di interazioni a svolgere funzioni complicate come quelle del cervello nella sua totalità.
 Lo studio del cervello e la sua comprensione ha potuto ispirare i modelli scientifici e matematici che danno vita a quelle che sono dette \textit{reti neurali artificiali (in inglese \textit{Artificial Neural Networks}, ANN)}.
+\clearpage
+
 \vspace{2 cm}
 
-\begin{figure}[h]
+\begin{figure}[b]
 \centering
 {\includegraphics[scale=0.65]{media_tesi/real_neuron.png}}
 \caption{Un immagine di un neurone ottenuta al microscopio da John Anderson, Institute for Neuroinformatics, Zurigo, Svizzera.}
 \label{fig:subfig}
 \end{figure}
 
-\vspace{1.5 cm}
 
 \begin{figure}[h]
 \centering
@@ -82,12 +83,12 @@ Il perceptrone può essere visto come modello di un neurone biologico e può app
 Esistono poi anche le \textit{radial basis network} (RBF) che altro non sono che reti feedforward (e che possiamo schematizzare proprio come la FF in figura sopra) ma con una funzione di attivazione radiale di base. Non tutte le reti prendono il nome dalla propria funzione di attivazione ma questa sembrava avere particolari speranze nel 1988, quando uscì il documento che la presentava poiché la funzione che stava alla sua base era in grado di interpolare in spazi di molte dimensioni\cite{broomhead1988radial}.
  
 %------------------------------------------
-\begin{wrapfigure}{R}{7.0cm}
-\includegraphics[scale=0.7]{media_tesi/DCN.png}
-\caption{Una DCN}\label{wrap-fig:1}
+%\begin{wrapfigure}{R}{7.0cm}
+%\includegraphics[scale=0.7]{media_tesi/DCN.png}
+%\caption{Una DCN}\label{wrap-fig:1}
 %\includegraphics[scale=1.4]{media_tesi/feed_forward.png}
 %\caption{rete convoluzionale profonda (DCN).}\label{wrap-fig:1}
-\end{wrapfigure} 
+%\end{wrapfigure} 
 %------------------------------------------
 Un altro caso speciale o un evoluzione delle FF sono le \textit{reti convoluzionali profonde} (\textit{deep convolutional network , DCN}) il cui utilizzo primario è il processing delle immagini e in alcuni casi anche degli input audio \cite{lecun1998gradient}. Si ispirano a quelle che è il funzionamento del sistema visivo degli uomini.
 Le reti convoluzionali sono in grado di riconoscere soggetti nelle immagini sapendo quindi fare una classificazione in un insieme di immagini che gli vengono sottoposte. Le DCN scansionano le immagini partendo da piccoli blocchi di pixel vicini tra loro e individuano le caratteristiche delle immagini porzione dell'immagine per porzione, fino a classificare l'immagine nella sua totalità.
@@ -101,8 +102,12 @@ Le \emph{Recurrent Neural Networks (RNN)} sono delle reti feed-forward in cui il
 
 \begin{figure}[hbtb]
 \centering
+\subfloat[][\emph{una DCN}]
+{\includegraphics[scale=1]{media_tesi/DCN.png}} \\
+\vspace{2cm}
 \subfloat[][\emph{una GAN}]
-{\includegraphics[scale=0.7]{media_tesi/GAN.png}} \quad
+{\includegraphics[scale=0.7]{media_tesi/GAN.png}} \\
+\vspace{2cm}
 \subfloat[][\emph{una RNN}]
 {\includegraphics[scale=0.4]{media_tesi/RNN.png}}\\
 
